@@ -1,0 +1,323 @@
+body{
+	background-color:#f5f1ee;
+	line-height:180%;
+	padding-top:20px;
+	}
+
+.bg {
+	/*background:url(../images/background/tileable_wood_texture_by_ftIsis_Stock7.jpg) repeat;*/
+	background:url(../images/background/tileable_wood_texture.jpg) repeat;
+	margin-top:-50px;
+	position: fixed;
+	width: 100%;
+	height: 400%;
+	top:0;
+	left:0;
+	z-index: -1;
+}
+
+section {
+  color: #fff;
+  font-family: arial;
+  width: 500px;
+  margin: auto;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	border-bottom:0px hidden #cfcfcf; 
+}
+
+
+.container {
+	padding-top:25px;
+	background-color:transparent;
+}
+
+
+#nav {
+	padding-bottom:-10px!important;
+}
+	
+#nav ul li {
+	display:inline-block;
+}
+
+
+#nav ul li {
+	/*background:#F0C;*/
+	width:32px!important;
+	max-height:52px!important;
+	text-align:center!important;
+	vertical-align:top!important;
+	margin: 0px 0px -8px 0px!important;
+	line-height:45px;
+}
+
+
+#nav a {
+	text-align:center!important;
+	text-decoration: none!important;
+	border-bottom: 0px hidden transparent;
+	color:#333;
+	display:inline-block;
+    width:24px!important;
+    height:24px!important;
+    border-radius:12px;
+    font-size:14px;
+    line-height:24px;
+    background:#efefef;
+}
+ 
+ 
+#nav a:hover {
+	text-decoration: none!important;
+	border-bottom: 0px hidden transparent;
+	color:#222;
+    width:32px!important;
+    height:32px!important;
+    border-radius:15px;
+    font-size:18px;
+    line-height:32px;
+    background:#fffeff;
+	font-weight:bold;
+	-webkit-transition: all 0.12s ease-in-out;
+	-moz-transition: all 0.12s ease-in-out;
+	-o-transition: all 0.12s ease-in-out;
+	-ms-transition: all 0.12s ease-in-out;
+}
+
+
+#mainnav {
+	margin: 20px 0 10 0;
+	line-height:40px;
+}
+ 
+#mainnav ul li {
+	display: inline;
+	margin: 0 14px 0 0;
+	margin-bottom: 13px;
+}
+ 
+#mainnav a {
+	text-decoration: none!important;
+	border-bottom: 0px hidden transparent;
+	color:#dfdfdf;
+}
+ 
+#mainnav .link a:hover {
+	text-decoration: underline;
+	border-bottom: 1px solid #cfcfcf;
+
+}
+
+#mainnav .link a:active {
+	text-decoration: underline;
+	border-bottom: 1px solid #cfcfcf;
+}
+
+
+.feature-image img {
+	max-width: 100%;
+	width:100%;
+	height: auto;
+	margin-bottom:-4px;
+}
+
+	
+.anfang:first-letter {
+ font-size : 50px;
+ float : left;
+ padding-top:13px;
+}
+
+
+.footer,
+.footer a{
+	background-color:#ffff00;
+	text-align:center;
+	text-decoration:none
+}
+
+.bold{
+	font-weight:bold;
+}
+
+.italic{
+	font-style:italic;
+}
+
+.center{
+	text-align:center;
+}
+
+.sup{
+	vertical-align: baseline;
+	font-size: 0.8em;
+	position: relative;
+	top: -0.4em;'
+}
+
+
+
+/********** Specific styles for Ljudkalendern **********/
+
+
+.album-shadow {
+   -moz-box-shadow:    inset 0 0 10px #232323;
+   -webkit-box-shadow: inset 0 0 10px #232323;
+   box-shadow:         inset 0 0 10px #232323;
+}
+
+/* fade in on hover of album */
+.fade img{
+   opacity: 0.75;
+   transition: opacity .15s ease-in-out;
+   -moz-transition: opacity .15s ease-in-out;
+   -webkit-transition: opacity .15s ease-in-out;
+   }
+
+   .fade:hover img{
+      opacity: 1;
+      }
+	  
+/* fade in on hover of menu links */
+/* !!might be redundant when entire page fade in at once!! */
+.nav-fade li {
+   /*background: #fcfcfc;
+   padding: 2px 4px;
+   display: inline-block;*/
+   transition: background .25s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
+   }
+
+	.nav-fade li a{
+		color:#cfcfcf;
+	   }
+
+   .nav-fade li:hover {
+      /*background: #0dd;*/
+	  text-decoration:none;
+      }
+	  
+
+	  
+/* hide vertical text (div) slides on load*/	  
+#first,
+#second,
+#third{
+	display:none;
+}
+
+.slidemenustyle{
+	background-color:#C93;
+	padding-top:4px;
+	padding-bottom:6px;
+	margin-bottom:16px;
+	background-image:url(../images/background/wovensacktile.jpg);
+    -moz-box-shadow:    inset 0 0 12px #000000;
+    -webkit-box-shadow: inset 0 0 12px #000000;
+    box-shadow:         inset 0 0 12px #000000;
+	}
+.slidemenustyle,
+.slidemenustyle h4,h3{
+	color:#dfdfdf;
+}
+
+
+
+/*******************/
+	
+.nobreak {
+     display: inline;
+}
+
+
+/* Special styles for music (Spotify) links */
+/* !!Fix underline color!! */
+.link-playlist{
+	color:#dfdfdc!important;
+	text-decoration:none!important;	
+	white-space: nowrap;
+}
+.link-playlist img{
+	margin-bottom:-3px;
+	padding-right:3px;
+	position:relative;
+}
+.link-playlist a{
+	color:#7cc011!important;
+	text-decoration:none!important;	
+	border-bottom: 0px solid #dfdfdc;
+}
+.link-playlist a:hover{
+	color:#72b00f!important;
+	text-decoration:none!important;	
+	border-bottom: 1px solid #d6d6d6;
+}
+.link-playlist a:active{
+	color:#639a0e!important;
+	text-decoration:none!important;	
+	border-bottom: 1px solid #d6d6d6;
+}
+.link-desc{
+	font-size:12px;
+	font-style:italic;
+	line-height:16px; /* inspect */
+}
+
+.playlists a{
+	font-size:18px; /* inspect */
+}
+
+
+
+/********** Fade in animation **********/
+
+
+.container {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

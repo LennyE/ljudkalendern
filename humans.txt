@@ -1,0 +1,31 @@
+
+/* TEAM */
+
+	Creator: Lenny Ekberg
+	Twitter: @LennyEkberg
+	Location: Karlshamn, Sweden
+
+
+/* THANKS */
+
+	Skeleton Boilerplate: Dave Gamache
+	Site: http://davegamache.com/skeleton-css/
+	Twitter: @dhg
+	Location: San Francisco, CA
+	
+	Smoothscroll.js: Stuart Langridge
+	Site: http://www.kryogenix.org/code/browser/smoothscroll/
+	Twitter: @sil
+	Location: Stourbridge, UK
+	
+	Parallax effect: Sara Vieira
+	Site: http://codepen.io/SaraVieira/pen/fKmHC
+	Twitter: @NikkitaFTW
+	Location: Espinho, Portugal
+	
+
+/* SITE */
+
+	Site: http://ljudkalendern.se/
+	Description:
+	Language: Swedish
