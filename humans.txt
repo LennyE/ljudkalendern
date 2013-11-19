@@ -4,6 +4,10 @@
 	Creator: Lenny Ekberg
 	Twitter: @LennyEkberg
 	Location: Karlshamn, Sweden
+	
+	Code guru: Emil Aspman
+	Twitter: @emilaspman
+	Location: Karlshamn, Sweden
 
 
 /* THANKS */

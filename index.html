@@ -6,7 +6,7 @@
 <head>
          
         <!-- Basic Page Needs
-                ================================================== -->
+        ================================================== -->
         <meta charset="utf-8">
         <title>Ljudkalendern 2013</title>
         <meta name="description" content="Ljudkalendern 2013 &mdash; En julkalender fylld med härlig musik från året som gått!">
@@ -14,7 +14,7 @@
 
         <!-- Humans.txt
         ================================================== -->
-                <link type="text/plain" rel="author" href="http://ljudkalendern.se/humans.txt" />
+        <link type="text/plain" rel="author" href="http://ljudkalendern.se/humans.txt" />
 
         <!-- jQuery
         ================================================== -->
@@ -24,12 +24,16 @@
         ================================================== -->
         <script src="javascripts/parallaxbg.js"></script>
 
-        <!-- Smoothscroll (för smooth autoscroll)
+        <!-- Smoothscroll
         ================================================== -->
-                <script type="text/javascript" src="javascripts/smoothscroll.js"></script>
-                <!--<script type="text/javascript">window.addEvent('domready',function() { new SmoothScroll({ duration: 1800 }); });</script>-->
-        
-                <!-- Mobile Specific Metas
+        <script type="text/javascript" src="javascripts/smoothscroll.js"></script>
+        <!--<script type="text/javascript">window.addEvent('domready',function() { new SmoothScroll({ duration: 1800 }); });</script>-->
+
+        <!-- SVG fallback (to .png)
+        ================================================== -->
+		<script src="javascripts/svgeezy/svgeezy.js"></script>
+
+        <!-- Mobile Specific Metas
         ================================================== -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -46,19 +50,18 @@
 
         <!-- Favicons
         ================================================== -->
-                <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="shortcut icon" href="images/favicon.ico">
         <!--Fixar sen<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
         <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">-->
 
         <!-- Show/hide div
         ================================================== -->
-        <!--<script src="javascripts/jquery-1.7.1.min.js"></script>-->                 
         <script src="javascripts/showhide-div.js"></script>
                 
         <!-- Analytics
         ================================================== -->
-                <!-- !!Add analyics!!-->
+        <!-- !!Add analyics!!-->
                  
 </head>
 <body>
@@ -71,7 +74,7 @@
         <div class="container">
         
                 <div id="mainnav" style="margin-bottom:-30px;" class="sixteen columns center"><!--center in class-->
-                        <span class="feature-image"><a href="index.html"><img style="max-width:250px; max-height:inherit; margin-bottom:-14px;" src="images/logo/logo_w.png" alt="logo"></a></span>
+                        <span class="feature-image"><a href="index.html"><img style="max-width:250px; max-height:inherit; margin-bottom:-14px;" src="images/logo/logo.svg" alt="logo"></a></span>
                         <ul>
                                 <li class="link"><span class="slide1"><a href="#">Spellistor</a></span></li>
                                 <li class="link"><span class="slide2"><a href="#">Om</a></span></li>
@@ -194,31 +197,33 @@
                                         
 											
                                         <script>
+                                        <!--PROBLEM VID KLICK AV LÄNK SOM INTE FINNS-->
                                         var data = {
-                                                1 : {0 : '', 1 : 'empty_dark.png'},
-                                                2 : {0 : '', 1 : 'empty_dark.png'},
-                                                3 : {0 : '4RRoXrVcKNxaMvk33M9p77', 1 : 'empty_dark.png'},
-                                                4 : {0 : '37PSwlkDKtmPtZFlFzHfXq', 1 : 'early-winters-early-winters.jpg'},
-                                                5 : {0 : '7iycyHwOW2plljYIK6I1Zo', 1 : 'fun-some-nights.jpg'},
-                                                6 : {0 : '0DbWfHsiRBPjdvEyjtIXjM', 1 : 'joel-alme-a-tender-trap.jpg'},
-                                                7 : {0 : '4p9dVvZDaZliSjTCbFRhJy', 1 : 'of-monsters-and-men-my-head-is-an-animal.jpg'},
-                                                8 : {0 : '6TLKrvqXxpfgt0RIzjhF1Y', 1 : 'caotico-sunrise-confessions.jpg'},
-                                                9 : {0 : '7EgUEPvAqbLAHH3T60QLnW', 1 : 'two-door-cinema-beacon.jpg'},
-                                                10 : {0 : '3zvxtXSdWY2JHkKmoIG3OG', 1 : 'the-avett-brothers-the-carpenter.jpg'},
-                                                11 : {0 : '3mCCQAORogO1XEaUuV6MIS', 1 : 'the-mountain-goats-transcendental-youth.jpg'},
-                                                12 : {0 : '5h7fx8ILwOZ3I5yQ4eGBl7', 1 : 'the-lumineers-the-lumineers.jpg'},
-                                                13 : {0 : '0Aa8A56Rh3cswN0khA1eAa', 1 : 'radical-face-the-roots.jpg'},
-                                                14 : {0 : '20kvEYOKO70RgauMgjGJ5A', 1 : 'you-say-france-angry-men.jpg'},
-                                                15 : {0 : '2vUSFbWh8iPEquWeGhVL0u', 1 : 'urban-cone-our-youth.jpg'},
-                                                16 : {0 : '5cTqTlf1jurxDYxTodeBpk', 1 : 'emerald-park-absolute-zero.jpg'},
-                                                17 : {0 : '5sE7gNtA3bmogo3t2qZ20k', 1 : 'armand-mirpour-boy-will-sing-for-directions-home.jpg'},
-                                                18 : {0 : '2BPr6ZNzvL59XAvp3P2S1r', 1 : 'bowerbirds-the-clearing.jpg'},
-                                                19 : {0 : '5uJpRBjDkTW8wtwDimhkdm', 1 : 'mumford-and-sons-babel.jpg'},
-                                                20 : {0 : '6kCydCXVYWRebP594HP3XH', 1 : 'metric-synthetica.jpg'},
-                                                21 : {0 : '4ZTcGoOrNro2aCAStXEjZi', 1 : 'the-shins-port-of-morrow.jpg'},
-                                                22 : {0 : '3HBNdwT8Q3K1IDNocUJWo4', 1 : 'little-hands-of-asphalt-floors.jpg'},
-                                                23 : {0 : '6Z3MfMebUucj95zrHMrbyV', 1 : 'first-aid-kit-the-lions-roar.jpg'},
-                                                24 : {0 : '7uLJWaAXCeutNqjyP5Q82x', 1 : 'soundtrack-of-our-life-throw-it-to-the-universe.jpg'},
+                                                1 : {0 : '#', 1 : '2013/kodaline-in-a-perfect-world.jpg'},
+                                                2 : {0 : '#', 1 : '2013/kashmir-ear.jpg'},
+                                                3 : {0 : '#', 1 : '2013/emil-jensen-i-det-nya-landet.jpg'},
+                                                4 : {0 : '#', 1 : '2013/drew-holcomb-and-the-neighbors-the-collection.jpg'},
+                                                5 : {0 : '#', 1 : '2013/pixie-carnation-the-new-world-record.jpg'},
+                                                6 : {0 : '#', 1 : '2013/retro-stefson-retro-stefson.jpg'},
+                                                7 : {0 : '#', 1 : '2013/ra-ra-riot-beta-love.jpeg'},
+                                                8 : {0 : '#', 1 : '2013/vit-pals-agd.jpg'},
+                                                9 : {0 : '#', 1 : '2013/the-royal-concept-goldrushed.jpg'},
+                                                10 : {0 : '#', 1 : '2013/arcade-fire-reflektor.jpg'},
+                                                11 : {0 : '#', 1 : '2013/biffy-clyro-opposites.jpg'},
+                                                12 : {0 : '#', 1 : '2013/veronica-maggio-handen-i-fickan-fast-jag-bryr-mig.jpg'},
+                                                13 : {0 : '#', 1 : '2013/capital-cities-in-a-tidal-wave-of-mystery.jpeg'},
+                                                14 : {0 : '#', 1 : '2013/the-leisure-society-alone-aboard-the-ark.jpg'},
+                                                15 : {0 : '#', 1 : '2013/looptroop-rockers-mitt-hjarta-ar-en-bomb.jpg'},
+                                                16 : {0 : '#', 1 : '2013/bastille-bad-blood.jpg'},
+                                                17 : {0 : '#', 1 : '2013/phoenix-bankrupt.jpg'},
+                                                18 : {0 : '#', 1 : '2013/ellie-goulding-halcyon-days.png'},
+                                                19 : {0 : '#', 1 : '2013/vampire-weekend-vampires-of-the-city.jpg'},
+                                                20 : {0 : '#', 1 : '2013/the-strokes-comedown-machine.jpg'},
+                                                21 : {0 : '#', 1 : '2013/the-mowglis-waiting-for-the-dawn.jpg'},
+                                                22 : {0 : '#', 1 : '2013/iron-and-wine-ghost-on-ghost2.jpg'},
+                                                23 : {0 : '#', 1 : '2013/perl-jam-lightning-bolt.jpg'},
+                                                24 : {0 : 'href="http://open.spotify.com/album/7uLJWaAXCeutNqjyP5Q82x', 1 : '2013/kakkmaddafakka-six-months-is-a-long-time.jpg'},
+                                                //25 : {0 : '#', 1 : 'empty_dark.png'},
                                         };
                                         
                                         for (var i in data) {
