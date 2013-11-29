@@ -12,14 +12,6 @@
 	<meta name="description" content="Ljudkalendern &mdash; En julkalender fylld med h&auml;rlig musik fr&aring;n &aring;ret som g&aring;tt!">
 	<meta name="author" content="Lenny Ekberg">
 
-	<!-- Open graph
-	================================================== -->
-	<meta property="og:title" content="Ljudkalendern" />
-	<meta property="og:type" content="website" />
-	<meta property="og:description" content="En julkalender fylld med h&auml;rlig musik fr&aring;n &aring;ret som g&aring;tt!" />
-	<meta property="og:image" content="http://ljudkalendern.se/images/socialmedia/fb_share_image.jpg" />
-	<meta property="og:url" content="http://ljudkalendern.se" />
-
 	<!-- CSS
 	================================================== -->
 	<link rel="stylesheet" href="stylesheets/base.css">
@@ -79,10 +71,10 @@
 	<meta property="og:title" content="Ljudkalendern.se" />
 	<meta property="og:type" content="website" />       
 	<meta property="og:description" content="En adventskalender fylld med musik!" />       
-	<meta property="og:image" content="http://www.ljudkalendern.se/images/share/fb_share_image1.jpg" />
-    <meta property="og:image" content="http://www.ljudkalendern.se/images/share/fb_share_image2.jpg" />
-    <meta property="og:image" content="http://www.ljudkalendern.se/images/share/fb_share_image2.jpg" />
-	<meta property="og:url" content="http://www.ljudkalendern.se" />
+	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image1.jpg" />
+    <meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image1.jpg" />
+    <meta property="og:image" content="hhttp://ljudkalendern.se/images/share/fb_share_image1.jpg" />
+	<meta property="og:url" content="http://ljudkalendern.se" />
 		
 	<!-- Statistics
 	================================================== -->
