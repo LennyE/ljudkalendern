@@ -68,8 +68,8 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:description" content="En adventskalender fylld med musik!" />      
 	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image1.jpg" />
-	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image1.jpg" />
-	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image1.jpg" />
+	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image2.jpg" />
+	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image3.jpg" />
 	<meta property="og:url" content="http://ljudkalendern.se" />
 		
 	<!-- Statistics
