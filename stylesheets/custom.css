@@ -1,20 +1,21 @@
 body{
+	background:url(../images/backgrounds/tileable_wood_texture.jpg) repeat;
 	background-color:#f5f1ee;
 	line-height:180%;
-	padding-top:20px;
 	}
 
 .bg {
-	/*background:url(../images/background/tileable_wood_texture_by_ftIsis_Stock7.jpg) repeat;*/
-	background:url(../images/background/tileable_wood_texture.jpg) repeat;
-	margin-top:-50px;
+	background:url(../images/backgrounds/tileable_wood_texture.jpg) repeat;
 	position: fixed;
+	margin-top:-80px;
 	width: 100%;
 	height: 400%;
 	top:0;
 	left:0;
 	z-index: -1;
 }
+
+
 
 section {
   color: #fff;
@@ -96,14 +97,13 @@ a:hover {
 
 
 #mainnav {
-	margin: 20px 0 10 0;
 	line-height:40px;
 }
  
 #mainnav ul li {
 	display: inline;
-	margin: 0 14px 0 0;
-	margin-bottom: 13px;
+	margin: 0 7px 0 7px;
+	margin-bottom: 12px;
 }
  
 #mainnav a {
@@ -221,8 +221,8 @@ a:hover {
 	background-color:#C93;
 	padding-top:4px;
 	padding-bottom:6px;
-	margin-bottom:16px;
-	background-image:url(../images/background/wovensacktile.jpg);
+	margin-bottom:16px!important;
+	background-image:url(../images/backgrounds/wovensacktile.jpg);
     -moz-box-shadow:    inset 0 0 12px #000000;
     -webkit-box-shadow: inset 0 0 12px #000000;
     box-shadow:         inset 0 0 12px #000000;
@@ -276,6 +276,12 @@ a:hover {
 
 .playlists a{
 	font-size:18px; /* inspect */
+}
+
+
+.icon16{
+	height: 16px;
+	width: 16px;
 }
 
 
