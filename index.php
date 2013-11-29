@@ -35,10 +35,6 @@
 	================================================== -->
 	<script type="text/javascript" src="javascripts/smoothscroll.js"></script>
 	<!--<script type="text/javascript">window.addEvent('domready',function() { new SmoothScroll({ duration: 1800 }); });</script>-->
-    
-    <!-- SVG fallback (to .png)
-    ================================================== -->
-	<script src="javascripts/svgeezy/svgeezy.js"></script>
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -69,11 +65,11 @@
 	<!-- Open graph
 	================================================== -->
 	<meta property="og:title" content="Ljudkalendern.se" />
-	<meta property="og:type" content="website" />       
-	<meta property="og:description" content="En adventskalender fylld med musik!" />       
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="En adventskalender fylld med musik!" />      
 	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image1.jpg" />
-    <meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image1.jpg" />
-    <meta property="og:image" content="hhttp://ljudkalendern.se/images/share/fb_share_image1.jpg" />
+	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image1.jpg" />
+	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image1.jpg" />
 	<meta property="og:url" content="http://ljudkalendern.se" />
 		
 	<!-- Statistics
