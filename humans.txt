@@ -27,9 +27,14 @@
 	Twitter: @NikkitaFTW
 	Location: Espinho, Portugal
 	
+	Spotify
+	Site: https://www.spotify.com
+	Twitter: @Spotify
+	Location: Stockholm, Sweden
+
 
 /* SITE */
 
 	Site: http://ljudkalendern.se/
-	Description:
+	Description: A digital music advent calendar.
 	Language: Swedish
