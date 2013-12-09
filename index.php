@@ -187,7 +187,7 @@
 						6 => array('1xRzeGYhvel6QKEuRPLFXh', '2013/retro-stefson-retro-stefson.jpg'),
 						7 => array('6eTkAY5V7N2xPAovJWRFSr', '2013/ra-ra-riot-beta-love.jpg'),
 						8 => array('5lyGNHr9RNfyckKzNN1dq2', '2013/vit-pals-agd.jpg'),
-						9 => array('7EgUEPvAqbLAHH3T60QLnW', '2013/the-royal-concept-goldrushed.jpg'),
+						9 => array('30p1meHBKVwMY9lsOabmwd', '2013/the-royal-concept-goldrushed.jpg'),
 						10 => array('37xl28qGX45H01dsex3nUx', '2013/arcade-fire-reflektor.jpg'),
 						11 => array('1mGPHj7IomG8gBUW3wRi8G', '2013/biffy-clyro-opposites.jpg'),
 						12 => array('6FDDd5kzWGXVm1qbKRGqEg', '2013/veronica-maggio-handen-i-fickan-fast-jag-bryr-mig.jpg'),
@@ -215,7 +215,8 @@
 											<img class="album-shadow" src="images/albumcovers/'.$d[1].'" alt="'.$d[1].'">
 											<div style="position:absolute; text-shadow: 0px 2px 23px #222; text-align:center; top: 42%; width: 100%; font-size:80px; opacity:0.81; color:#fcfcfc;">'.$i.'</div>
 										</a>');
-									} else {
+									} 
+									else {
 										echo('<img class="album-shadow" src="images/albumcovers/empty_dark.png" alt="empty_dark.png">
 											<div style="position:absolute; text-shadow: 0px 2px 23px #222; text-align:center; top: 42%; width: 100%; font-size:80px; opacity:0.81; color:#fcfcfc;">'.$i.'</div>');
 									}
