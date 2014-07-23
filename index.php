@@ -166,7 +166,6 @@
 				
 				
 
-
 					<!-- menu & albums -->
 					<div id="nav" style="margin-bottom:14px; text-align:center; font-style:italic" class="sixteen columns nav-fade">
 						<ul id="kalendern" class="center">
@@ -210,7 +209,7 @@
 					foreach($data as $i => $d) {
 						echo('<div id="'.$i.'" class="four columns" style="margin-bottom:15px;">
 								<div class="feature-image fade" style="position:relative;">');
-									if(date('d') >= $i && date('n') == 12) {
+									if(date('d') >= $i && date('n') == 12 || date('Y') > 2013 ) {
 										echo('<a target="_blank" href="http://open.spotify.com/album/'.$d[0].'">
 											<img class="album-shadow" src="images/albumcovers/'.$d[1].'" alt="'.$d[1].'">
 											<div style="position:absolute; text-shadow: 0px 2px 23px #222; text-align:center; top: 42%; width: 100%; font-size:80px; opacity:0.81; color:#fcfcfc;">'.$i.'</div>
@@ -223,8 +222,6 @@
 								echo('</div>
 						 </div>');
 					}
-				
-				
 					?>
 
 				</div>
