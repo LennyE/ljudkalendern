@@ -9,7 +9,7 @@
 	================================================== -->
 	<meta charset="utf-8">
 	<title>Ljudkalendern</title>
-	<meta name="description" content="Ljudkalendern &mdash; En julkalender fylld med h&auml;rlig musik fr&aring;n &aring;ret som g&aring;tt!">
+	<meta name="description" content="Ljudkalendern &mdash; En kalender fylld med h&auml;rlig musik fr&aring;n &aring;ret som g&aring;tt!">
 	<meta name="author" content="Lenny Ekberg">
 
 	<!-- CSS
@@ -166,7 +166,7 @@
 				
 				
 
-					<!-- menu & albums -->
+					<!-- menu -->
 					<div id="nav" style="margin-bottom:14px; text-align:center; font-style:italic" class="sixteen columns nav-fade">
 						<ul id="kalendern" class="center">
 						<?php foreach(range(1,24) as $n) {
@@ -175,33 +175,34 @@
 						</ul>
 					</div>
 					
+					<!-- albums -->
 					<?php 
 					
 					$data = array(
-						1 => array('3YHf7ooFmrTOsp4jPM3aFj', '2013/kodaline-in-a-perfect-world.jpg'),
-						2 => array('39q3ilAGf1QcBwIzKkAhO6', '2013/kashmir-ear.jpg'),
-						3 => array('6HN0urVcVzm44FDDz1ZssA', '2013/emil-jensen-i-det-nya-landet.jpg'),
-						4 => array('3WequSBxJjxLL24Nvf3u0i', '2013/drew-holcomb-and-the-neighbors-the-collection.jpg'),
-						5 => array('2DeOjL5WprdaQb4vTWCWrE', '2013/pixie-carnation-the-new-world-record.jpg'),
-						6 => array('1xRzeGYhvel6QKEuRPLFXh', '2013/retro-stefson-retro-stefson.jpg'),
-						7 => array('6eTkAY5V7N2xPAovJWRFSr', '2013/ra-ra-riot-beta-love.jpg'),
-						8 => array('5lyGNHr9RNfyckKzNN1dq2', '2013/vit-pals-agd.jpg'),
-						9 => array('30p1meHBKVwMY9lsOabmwd', '2013/the-royal-concept-goldrushed.jpg'),
-						10 => array('37xl28qGX45H01dsex3nUx', '2013/arcade-fire-reflektor.jpg'),
-						11 => array('1mGPHj7IomG8gBUW3wRi8G', '2013/biffy-clyro-opposites.jpg'),
-						12 => array('6FDDd5kzWGXVm1qbKRGqEg', '2013/veronica-maggio-handen-i-fickan-fast-jag-bryr-mig.jpg'),
-						13 => array('4IpHjxzT5iQXP0SNWQFCsK', '2013/kakkmaddafakka-six-months-is-a-long-time.jpg'),
-						14 => array('6HTFCEmpEwbkJMzX3IB7xG', '2013/the-leisure-society-alone-aboard-the-ark.jpg'),
-						15 => array('5WNh9jz9m5PEfH5lKlaipA', '2013/imperial-state-electric-reptile-brain-music.jpg'),
-						16 => array('7HxQpGRaQXPudaP1t8E6n9', '2013/bastille-bad-blood.jpg'),
-						17 => array('0t0QkoTnDz5uj5I92C7wwE', '2013/noah-and-the-whale-heart-of-nowhere.jpg'),
-						18 => array('7DJgfpwm8MT0Kd3yqjb6eg', '2013/ellie-goulding-halcyon-days.jpg'),
-						19 => array('7DQ9r7wFUUtpJcQrKiiS02', '2013/looptroop-rockers-mitt-hjarta-ar-en-bomb.jpg'),
-						20 => array('4WnkQO4xD9ljQooB3VIxCV', '2013/the-strokes-comedown-machine.jpg'),
-						21 => array('67y5PUQ8B4qX7BpWu55uF6', '2013/phoenix-bankrupt.jpg'),
-						22 => array('1L19oPU0umN0bd2N1QQXJw', '2013/capital-cities-in-a-tidal-wave-of-mystery.jpg'),
-						23 => array('3PYpxrfvtSy2OmgiDbrjGM', '2013/iron-and-wine-ghost-on-ghost.jpg'),
-						24 => array('2Qi2SySN2ePZwMLDSv9Krn', '2013/vampire-weekend-vampires-of-the-city.jpg'),
+						1 => array('3YHf7ooFmrTOsp4jPM3aFj'),
+						2 => array('39q3ilAGf1QcBwIzKkAhO6'),
+						3 => array('6HN0urVcVzm44FDDz1ZssA'),
+						4 => array('3WequSBxJjxLL24Nvf3u0i'),
+						5 => array('2DeOjL5WprdaQb4vTWCWrE'),
+						6 => array('1xRzeGYhvel6QKEuRPLFXh'),
+						7 => array('6eTkAY5V7N2xPAovJWRFSr'),
+						8 => array('5lyGNHr9RNfyckKzNN1dq2'),
+						9 => array('30p1meHBKVwMY9lsOabmwd'),
+						10 => array('37xl28qGX45H01dsex3nUx'),
+						11 => array('1mGPHj7IomG8gBUW3wRi8G'),
+						12 => array('6FDDd5kzWGXVm1qbKRGqEg'),
+						13 => array('4IpHjxzT5iQXP0SNWQFCsK'),
+						14 => array('6HTFCEmpEwbkJMzX3IB7xG'),
+						15 => array('5WNh9jz9m5PEfH5lKlaipA'),
+						16 => array('7HxQpGRaQXPudaP1t8E6n9'),
+						17 => array('0t0QkoTnDz5uj5I92C7wwE'),
+						18 => array('7DJgfpwm8MT0Kd3yqjb6eg'),
+						19 => array('7DQ9r7wFUUtpJcQrKiiS02'),
+						20 => array('4WnkQO4xD9ljQooB3VIxCV'),
+						21 => array('67y5PUQ8B4qX7BpWu55uF6'),
+						22 => array('1L19oPU0umN0bd2N1QQXJw'),
+						23 => array('3PYpxrfvtSy2OmgiDbrjGM'),
+						24 => array('2Qi2SySN2ePZwMLDSv9Krn'),
 					);
 					
 					date_default_timezone_set('Europe/Stockholm');
@@ -210,8 +211,32 @@
 						echo('<div id="'.$i.'" class="four columns" style="margin-bottom:15px;">
 								<div class="feature-image fade" style="position:relative;">');
 									if(date('d') >= $i && date('n') == 12 || date('Y') > 2013 ) {
+									
+										//get album art from Spotify
+										$album = "spotify:album:".$d[0]."";
+										$url = "https://embed.spotify.com/oembed/?url=".$album."&format=json";
+										
+										$ch = curl_init();
+										curl_setopt($ch, CURLOPT_URL, $url);
+										curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+										curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (compatible; curl)");
+										curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+										curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+										$json = curl_exec($ch);
+										curl_close($ch);
+										
+										$json  = json_decode($json);
+										$cover = $json->thumbnail_url;
+										
+										//artistens eller gruppens namn (minus allt efter tankestrecket som av någon anledning är namnet på albumets sista spår)
+										$artist = strtok($json->title, '-');
+
+										//byt ut "cover" i länken mot "640" vilket genererar en högre upplösning av själva bilden
+										$largecover = str_replace("cover","640","$cover");
+									
+										
 										echo('<a target="_blank" href="http://open.spotify.com/album/'.$d[0].'">
-											<img class="album-shadow" src="images/albumcovers/'.$d[1].'" alt="'.$d[1].'">
+											<img class="album-shadow" src="'.$largecover.'" alt="'.$artist.'">
 											<div style="position:absolute; text-shadow: 0px 2px 23px #222; text-align:center; top: 42%; width: 100%; font-size:80px; opacity:0.81; color:#fcfcfc;">'.$i.'</div>
 										</a>');
 									} 
