@@ -4,11 +4,15 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
+
+
+	<script src="http://www.livejs.com/live.js"></script>
+
 	 
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-	<title>Ljudkalendern</title>
+	<title>Ljudkalendern 2014</title>
 	<meta name="description" content="Ljudkalendern &mdash; En kalender fylld med h&auml;rlig musik fr&aring;n &aring;ret som g&aring;tt!">
 	<meta name="author" content="Lenny Ekberg">
 
@@ -17,7 +21,7 @@
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/custom.css">
+	<link rel="stylesheet" href="stylesheets/custom.css?=new">
 
 	<!-- Humans.txt
 	================================================== -->
@@ -25,20 +29,76 @@
 
 	<!-- jQuery
 	================================================== -->
-	<script src="javascripts/jquery-1.10.2.min.js"></script>
+	<!--<script src="javascripts/jquery-1.10.2.min.js"></script>-->
+	<script  src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 	<!-- Parallax scroll
 	================================================== -->
-	<script src="javascripts/parallaxbg.js"></script>
+<!-- 	<script async src="javascripts/parallaxbg.js"></script> -->
 
-	<!-- Smoothscroll (f&ouml;r smooth autoscroll)
+	<!-- Smoothscroll (autoscroll till lucka)
 	================================================== -->
-	<script type="text/javascript" src="javascripts/smoothscroll.js"></script>
+	<script async type="text/javascript" src="javascripts/smoothscroll.js"></script>
 	<!--<script type="text/javascript">window.addEvent('domready',function() { new SmoothScroll({ duration: 1800 }); });</script>-->
+
+	<!-- Show/hide div
+	================================================== -->
+	<!--<script src="javascripts/jquery-1.7.1.min.js"></script>-->		 
+	<script async src="javascripts/showhide-div.js"></script>
 
 	<!-- Mobile Specific Metas
 	================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+<!-- 	<meta name="viewport" content="minimal-ui"> -->
+<!--
+	Android
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="nice-highres.png">
+-->
+	<!-- Apple -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- iPad Retina Landscape -->
+<!-- iPhone -->
+<link href="static/images/apple-touch-startup-image-320x460.png"
+      media="(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image">
+<!-- iPhone (Retina) -->
+<link href="static/images/apple-touch-startup-image-640x920.png"
+      media="(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
+<!-- iPhone 5 -->
+<link href="static/images/apple-touch-startup-image-640x1096.png"
+      media="(device-width: 320px) and (device-height: 568px)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
+<!-- iPad (portrait) -->
+<link href="static/images/apple-touch-startup-image-768x1004.png"
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: portrait)
+         and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image">
+<!-- iPad (landscape) -->
+<link href="static/images/apple-touch-startup-image-748x1024.png"
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: landscape)
+         and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image">
+<!-- iPad (Retina, portrait) -->
+<link href="static/images/apple-touch-startup-image-1536x2008.png"
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: portrait)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
+<!-- iPad (Retina, landscape) -->
+<link href="static/images/apple-touch-startup-image-1496x2048.png"
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: landscape)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -57,10 +117,6 @@
 	<!-- Retina iPad --> 
 	<link rel="apple-touch-icon" sizes="144x144" href="touch-icon-ipad-144.png" />
 
-	<!-- Show/hide div
-	================================================== -->
-	<!--<script src="javascripts/jquery-1.7.1.min.js"></script>-->		 
-	<script src="javascripts/showhide-div.js"></script>
 	
 	<!-- Open graph
 	================================================== -->
@@ -72,102 +128,31 @@
 	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image3.jpg" />
 	<meta property="og:url" content="http://ljudkalendern.se" />
 		
-	<!-- Statistics
-	================================================== -->
-	<!--  Analyics -->
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	
-	  ga('create', 'UA-46037681-1', 'ljudkalendern.se');
-	  ga('send', 'pageview');
-	</script>
+
 
 	<!-- Insights -->
 	<meta property="fb:admins" content="717632778" />
-		 
-		 
+	
+	<!-- gFonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,700' rel='stylesheet' type='text/css'>
+
+
 </head>
 <body>
 
-	<div class="bg"></div> <!-- bg class used by Parallax scroll -->
+<div class="bg"></div> <!-- bg class used by Parallax scroll -->
+<span id="top">&nbsp;</span><!-- scroll to top, ej aktiv. -->
 
 	<!-- Primary Page Layout
 	================================================== -->
-
-	<span id="top" style="position:absolute; top:-99px;">&nbsp;</span><!-- for scroll to top. -->
-	<div class="container">
 	
-		<div id="mainnav" style="margin-bottom:-30px;" class="sixteen columns center"><!--center in class-->
-            <span class="feature-image"><a href="index.php"><img style="max-width:250px; max-height:inherit; margin-bottom:-14px;" src="images/logo/logo.png" alt="logo"></a></span>
-			<ul>
-				<li class="link"><span class="slide1"><a href="#">Spellistor</a></span></li>
-				<li class="link"><span class="slide2"><a href="#">Om</a></span></li>
-			</ul>
-		</div>
-		
-			
-		<div style="padding-top:14px;" class="sixteen columns"></div>
+	<div class="container">
 
-
-		<div id="first" class="sixteen columns slidemenustyle">
-				
-			<div style="z-index:1; padding-top:6px;" class="child ten columns">
-			
-				<div style="position:; z-index:10; padding-right:12px; padding-top:4px;">
-					<h4 class="nobreak" style="padding-left:10px; padding-top:15px; z-index:1; font-size:20px;">En h&auml;rlig samling.</h4>
-					<span style="position:absolute; right:3%; padding-top:5px;"><span style="cursor:pointer; color:#cfcfcf;" class="slide1"><a href="#"><img src="images/buttons/close.png" style="width:16px;height:16px;" alt="close"></a></span></span></div>
-				</div>
-					
-					
-				<div style="background-color:; z-index:1; padding-bottom:-50px;" class="child seven columns">
-					<p style="padding:10px;">Spellistor &auml;r f&ouml;r m&aring;nga ett enkelt s&auml;tt att samla de b&auml;sta l&aring;tarna p&aring; ett och samma st&auml;lle. Det &auml;r ocks&aring; en m&ouml;jlighet att tillsammans skapa en blandning av l&aring;tar och dela med oss av denna till varandra. Just d&auml;rf&ouml;r &auml;r ett par spellistor placerade h&auml;r intill, varav en &auml;r &ouml;ppen f&ouml;r alla att dela med sig av och bidra till en samling av personliga guldklimpar! 
-					</p>
-				</div>
-					
-				<div style="background-color:; " class="child seven columns">
-					<p class="link-playlists"	 style="padding:10px;">
-						<span class="link-playlist"><a target="_blank" href="http://open.spotify.com/user/ljudkalendern/playlist/4nX9iCvMukyX6oEC8UTB3r"><img class="icon16" src="images/icons/spotify_icon.png" alt="spotify"> Ljudkalendern 2013</a></span> &mdash; Ljudkalendern<br>
-						<span class="link-desc">H&auml;r samlas l&aring;tarna fr&aring;n &aring;rets Ljudkalender.<br></span>
-					<br>
-						<span class="link-playlist"><a	 target="_blank" href="http://open.spotify.com/user/ljudkalendern/playlist/6L5DLgq03kw46Z8AH10D0D"><img class="icon16" src="images/icons/spotify_icon.png" alt="spotify"> Favoriter 2013</a></span> &mdash; &ouml;ppen spellista!<br>
-						<span class="link-desc">Lyssna p&aring; l&aring;tar andra uppt&auml;ckt under &aring;ret och<br>l&auml;gg till egna (&auml;ven &auml;ldre l&aring;tar).<br></span>
-					</p>
-				</div>
-				
-			</div>
-
-				
-			<div id="second" class="sixteen columns slidemenustyle">
-				
-				<div style="padding-top:6px;" class="child ten columns">
-				
-					<div style="padding-right:12px; padding-top:4px;">
-						<h4 class="nobreak" style="padding-left:10px; padding-top:15px; font-size:20px;">Favoriter 2013.</h4>
-						<span style="position:absolute; right:3%; padding-top:5px;"><span style="cursor:pointer; color:#cfcfcf;" class="slide2"><a href="#"><img src="images/buttons/close.png" style="width:16px;height:16px;" alt="close"></a></span></span></div>
-					</div>
-						
-					<div style="padding-bottom:-50px;" class="child seven columns">
-						<p style="padding:10px;">
-						Oavsett om du lyssnar p&aring; den senaste plattan av ditt favoritband eller precis har uppt&auml;ckt en ny intressant genre, fastnar vi alla f&ouml;r nya sp&auml;nnande l&aring;tar att l&auml;gga till i v&aring;ra spellistor. Ljudkalendern kommer under december m&aring;nad att delge ett axplock av den utgivna musiken från det g&aring;ngna &aring;ret, med f&ouml;rhoppningar om att v&auml;cka nyfikenhet inf&ouml;r framtiden — kanske blir det s&aring; att du finner en eller flera nya godbitar h&auml;r i jul! 
-						</p>
-					</div>
-						
-					<div style="background-color:; " class="child seven columns">
-						<p style="padding:10px;">
-						Alla album i Ljudkalendern &auml;r utgivna under 2013, men nya personliga favoriter g&aring;r att finna n&auml;r och var som helst i tiden. Oavsett om du &auml;lskar storbandsjazz, dansar till electro eller f&ouml;redrar reggae, finns ut&ouml;ver sj&auml;lva Ljudkalendern m&ouml;jligheten att sj&auml;lv l&auml;gga till samt lyssna p&aring; andras favoritl&aring;tar i den &ouml;ppna spellistan <span class="link-playlist"><a target="_blank" href="http://open.spotify.com/user/ljudkalendern/playlist/6L5DLgq03kw46Z8AH10D0D"><img class="icon16" src="images/icons/spotify_icon.png" alt="spotify"> Favoriter 2013</a></span>.
-						<br><br>God jul &amp; gott nytt &aring;r &ouml;nskar Ljudkalendern!&nbsp;
-						</p>
-					</div>
-						
-				</div>
-				
-				
+			<?php include('menuitems.php'); ?>
 
 					<!-- menu -->
-					<div id="nav" style="margin-bottom:14px; text-align:center; font-style:italic" class="sixteen columns nav-fade">
+					<div id="nav" class="sixteen columns nav-fade">
 						<ul id="kalendern" class="center">
 						<?php foreach(range(1,24) as $n) {
 							echo('<li><a href="#'.$n.'">'.$n.'</a></li>'."\n");
@@ -179,6 +164,34 @@
 					<?php 
 					
 					$data = array(
+						1 => array('4KyGV3oBIMDeP2C5OmhYsd'), /* svenska björnstammen */
+						2 => array('1dKh4z5Aayt8FFDWjO5FDh'), /* future islands */
+						3 => array('7aC8ce2LQ6IZRROYJw63oS'), /* faråker */
+						4 => array('22cFcAQkydpTzeSKQZEKv0'), /* foster the people */
+						5 => array('6a8GZWPmLWWTUDsQ61yAro'), /* timbuktu */
+						6 => array('4cntNMQjpROMQmevKb8H9f'), /* of mice & men */
+						7 => array('2jgb0dt6ix8RRvJWmDRb5Z'), /* yelle */
+						8 => array('7lzl1Qfv4NqSmypuKmF07l'), /* röyksopp */
+						9 => array('2pza66DUreALycIoqlieMo'), /* milky chance */
+						10 => array('6TbkWAqqY4nhQnYim61IU8'), /* alt-j */
+						11 => array('5sCsfubNchaI9RCpP7K7aB'), /* jenny lewis */
+						12 => array('0U78mbujuFjpprS0G9QcTx'), /* chromeo */
+						13 => array('0cnNCK2xpudXjB8pzsrYy9'), /* bleechers */
+						14 => array('3GsZ6BxwhIVtOUrOZg8Jm7'), /* cazzette */
+						15 => array('22F5JWqnUh0qchqI2wQfS0'), /* the kooks */
+						16 => array('7HxQpGRaQXPudaP1t8E6n9'),
+						17 => array('0t0QkoTnDz5uj5I92C7wwE'),
+						18 => array('7DJgfpwm8MT0Kd3yqjb6eg'),
+						19 => array('7DQ9r7wFUUtpJcQrKiiS02'),
+						20 => array('4WnkQO4xD9ljQooB3VIxCV'),
+						21 => array('67y5PUQ8B4qX7BpWu55uF6'),
+						22 => array('1L19oPU0umN0bd2N1QQXJw'),
+						23 => array('3PYpxrfvtSy2OmgiDbrjGM'),
+						24 => array('2Qi2SySN2ePZwMLDSv9Krn'),
+					);
+
+
+					/*
 						1 => array('3YHf7ooFmrTOsp4jPM3aFj'),
 						2 => array('39q3ilAGf1QcBwIzKkAhO6'),
 						3 => array('6HN0urVcVzm44FDDz1ZssA'),
@@ -203,16 +216,18 @@
 						22 => array('1L19oPU0umN0bd2N1QQXJw'),
 						23 => array('3PYpxrfvtSy2OmgiDbrjGM'),
 						24 => array('2Qi2SySN2ePZwMLDSv9Krn'),
-					);
+					*/
+					
 					
 					date_default_timezone_set('Europe/Stockholm');
 					
 					foreach($data as $i => $d) {
-						echo('<div id="'.$i.'" class="four columns" style="margin-bottom:15px;">
-								<div class="feature-image fade" style="position:relative;">');
-									if(date('d') >= $i && date('n') == 12 || date('Y') > 2013 ) {
+						echo('<div id="'.$i.'" class="four columns album-margin">
+								<div class="feature-image fade">');
+									//dagens datum och månad ELLER efter årsskiftet
+									if(date('d') >= $i && date('n') >= 10 || date('Y') > 2013 ) {
 									
-										//get album art from Spotify
+										//get album art url from Spotify
 										$album = "spotify:album:".$d[0]."";
 										$url = "https://embed.spotify.com/oembed/?url=".$album."&format=json";
 										
@@ -231,38 +246,71 @@
 										//artistens eller gruppens namn (minus allt efter tankestrecket som av någon anledning är namnet på albumets sista spår)
 										$artist = strtok($json->title, '-');
 
-										//byt ut "cover" i länken mot "640" vilket genererar en högre upplösning av själva bilden
+										//byt ut "cover" i länken mot "640" vilket genererar en högre upplösning av själva bilden (60, 85, 120, 300, eller 640)
 										$largecover = str_replace("cover","640","$cover");
 									
 										
-										echo('<a target="_blank" href="http://open.spotify.com/album/'.$d[0].'">
-											<img class="album-shadow" src="'.$largecover.'" alt="'.$artist.'">
-											<div style="position:absolute; text-shadow: 0px 2px 23px #222; text-align:center; top: 42%; width: 100%; font-size:80px; opacity:0.81; color:#fcfcfc;">'.$i.'</div>
-										</a>');
+									  /////////////////////////
+									 // server image chache //
+									/////////////////////////
+										
+										// cdn link output from Spotify curl request
+ 										//$spotify_cdn_url = "https://d3rt1990lpmkn.cloudfront.net/640/032141dbc0c946bfc0347fc42cfed43c27df5300"; */
+										$spotify_cdn_url = $largecover;
+										
+										// server cache folder
+										$folder = 'images/cache/2014/';
+										
+										// server cache filename
+										$file = basename($spotify_cdn_url);
+										
+										// complete server filepath
+										$filepath = ''.$folder.''.$file.'';
+
+
+										if (file_exists($filepath)) {
+											echo('<a href="spotify://album/'.$d[0].'">
+													<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
+												<span class="album-number-active">'.$i.'</span>
+												</a>');
+											flush(); //visar albumen efterhand de laddas
+										}
+										else {
+										    $destdir = ''.$folder.'';
+										    $img=file_get_contents($spotify_cdn_url);
+										    file_put_contents($destdir.substr($spotify_cdn_url, strrpos($spotify_cdn_url,'/')), $img);
+										    
+										    echo('<a href="spotify://album/'.$d[0].'">
+													<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
+												<span class="album-number-active">'.$i.'</span>
+												</a>');
+											flush(); //visar albumen efterhand de laddas
+										}
+									
 									} 
 									else {
-										echo('<img class="album-shadow" src="images/albumcovers/empty_dark.png" alt="empty_dark.png">
-											<div style="position:absolute; text-shadow: 0px 2px 23px #222; text-align:center; top: 42%; width: 100%; font-size:80px; opacity:0.81; color:#fcfcfc;">'.$i.'</div>');
+										echo('<img class="album-shadow" src="images/albumcovers/empty_transp.png" alt="empty_dark.png">
+											<div class="album-number">'.$i.'</div>');
 									}
 								echo('</div>
 						 </div>');
 					}
 					?>
 
-				</div>
+	</div><!--end container-->
 				
 		<!-- footer --->
-		<div class="" style="margin-top:28px; padding-bottom:22px; background-color:#; opacity:1.0;">
+		<div class="footer">
 		
 		    <div class="container">
 				    
-		    	<div id="mainnav" style="margin-bottom:0px;" class="sixteen columns center"><!--center in class-->
-					<ul>
+		    	<div id="mainnav" style="margin-bottom:0px;" class="sixteen columns center">
+					<!--<ul>
 						<li class="link"><a href="https://www.facebook.com/Ljudkalendern">Facebook</a></li>
 						<li class="link"><a href="http://instagram.com/ljudkalendern">Instagram</a></li>
 						<li class="link"><a href="https://twitter.com/ljudkalendern">Twitter</a></li>
 						<li class="link"><a href="http://open.spotify.com/user/ljudkalendern">Spotify</a></li>
-					</ul>
+					</ul>-->
 					<ul style="margin-top:-25px;">
 						<li class="link"><a href="mailto:hej@ljudkalendern.se?subject=Ljudkalendern">hej@ljudkalendern.se</a></li>
 					</ul>
@@ -272,4 +320,18 @@
 		</div>
 
 </body>
+
+	<!-- Analyics
+	================================================== -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-46037681-1', 'ljudkalendern.se');
+	  ga('send', 'pageview');
+	</script>
+	
 </html>
+
