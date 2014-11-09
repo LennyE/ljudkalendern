@@ -1,9 +1,23 @@
 body{
-	background:url(../images/backgrounds/tileable_wood_texture.jpg) repeat;
-	background-color:#f5f1ee;
+/* 	background:url(../images/backgrounds/tileable_wood_texture.jpg) repeat; */
+	background:url(../images/backgrounds/unsplash-wood-1440.jpg?=new) repeat-y center center; 
+  background-size: 100%;
+  background-position-y:-80px;
+	
+/*
+	background:url(../images/backgrounds/photo.jpg) repeat;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment:fixed;
+
+/*     background-color:#f5f2ef; */
+    background-color:#fff;
 	line-height:180%;
+	margin-top: 10px;
 	}
 
+
+/*
 .bg {
 	background:url(../images/backgrounds/tileable_wood_texture.jpg) repeat;
 	position: fixed;
@@ -14,7 +28,12 @@ body{
 	left:0;
 	z-index: -1;
 }
+*/
 
+
+#top{
+	position:absolute; top:-99px;
+}
 
 
 section {
@@ -45,12 +64,26 @@ a:hover {
 
 #nav {
 	padding-bottom:-10px!important;
+	margin-bottom:14px;
+	text-align:center;
+	font-style:italic;
+		font-family: 'Source Code Pro', !important;
+
 }
 	
 #nav ul li {
 	display:inline-block;
+	margin-bottom: 0px;
+
 }
 
+#kalendern{
+		margin-top: 8px;
+		margin-bottom: 14px;
+}
+ul, ol {
+margin-bottom: 0px;
+}
 
 #nav ul li {
 	/*background:#F0C;*/
@@ -60,6 +93,7 @@ a:hover {
 	vertical-align:top!important;
 	margin: 0px 0px -8px 0px!important;
 	line-height:45px;
+
 }
 
 
@@ -69,30 +103,36 @@ a:hover {
 	border-bottom: 0px hidden transparent;
 	color:#333;
 	display:inline-block;
-    width:24px!important;
-    height:24px!important;
-    border-radius:12px;
+    width:26px!important;
+    height:26px!important;
+    border-radius:13px;
     font-size:14px;
-    line-height:24px;
+    line-height:26px;
     background:#efefef;
+    
+    
+    -webkit-transition: all 0.12s ease-in-out;
+	-moz-transition: all 0.12s ease-in-out;
+	-o-transition: all 0.12s ease-in-out;
+	-ms-transition: all 0.12s ease-in-out;
 }
  
  
 #nav a:hover {
 	text-decoration: none!important;
 	border-bottom: 0px hidden transparent;
-	color:#222;
-    width:32px!important;
-    height:32px!important;
-    border-radius:15px;
-    font-size:18px;
+	color:#fff;
+    width:33px!important;
+    height:33px!important;
+    border-radius:16px;
+    font-size:14px;
     line-height:32px;
-    background:#fffeff;
+    background:transparent;
 	font-weight:bold;
-	-webkit-transition: all 0.12s ease-in-out;
-	-moz-transition: all 0.12s ease-in-out;
-	-o-transition: all 0.12s ease-in-out;
-	-ms-transition: all 0.12s ease-in-out;
+	
+-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
+-moz-box-shadow: inset 0px 0px 0px 2px #fff;
+box-shadow: inset 0px 0px 0px 2px #fff;
 }
 
 
@@ -124,11 +164,14 @@ a:hover {
 }
 
 
+.feature-image {
+	position: relative;	
+}
 .feature-image img {
 	max-width: 100%;
 	width:100%;
 	height: auto;
-	margin-bottom:-4px;
+	margin-bottom:-8px;
 }
 
 	
@@ -139,9 +182,11 @@ a:hover {
 }
 
 
-.footer,
+.footer{
+	margin-top:28px;
+	padding-bottom:22px;
+}
 .footer a{
-	background-color:#ffff00;
 	text-align:center;
 	text-decoration:none
 }
@@ -166,30 +211,126 @@ a:hover {
 }
 
 
+.bg-color{
+	background-color: aqua;
+}
+
+.album-number{
+	position:absolute;
+	text-shadow: 0px 2px 17px #0f0f0f;
+	text-align:center;
+	top: 42%;
+	width: 100%;
+	font-size:50px;
+/* 	opacity:0.62; */
+	color:#fcfcfc;
+	font-family: 'Roboto', sans-serif;
+	-webkit-transition: all 0.12s ease-in-out;
+	-moz-transition: all 0.12s ease-in-out;
+	-o-transition: all 0.12s ease-in-out;
+	-ms-transition: all 0.12s ease-in-out;
+	cursor: default;
+}
+
+.album-number-active{
+	position:absolute;
+	text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+	text-align:center;
+	top:42%;
+	width: 100%;
+	font-size:50px;
+/* 	opacity:0.62; */
+	color:#fcfcfc;
+	font-family: 'Roboto', sans-serif;
+	-webkit-transition: all 0.22s ease-in-out;
+	-moz-transition: all 0.22s ease-in-out;
+	-o-transition: all 0.22s ease-in-out;
+	-ms-transition: all 0.22s ease-in-out;
+	opacity: 1.0;
+	z-index: 999;
+	color:#fff;
+
+}
+
+
+
+
+.album-number-active:hover,
+.album-cover:hover + .album-number-active {
+
+
+	transform:         scale(0.0); 
+	-moz-transform:    scale(0.0); 
+	-webkit-transform: scale(0.0); 
+	-o-transform:      scale(0.0); 
+	-ms-transform:     scale(0.0); 
+	
+	transform-origin:center;
+
+ 
+ 	opacity:0.0;
+	-webkit-transition: all 0.08s ease-in-out;
+	-moz-transition: all 0.12s ease-in-out;
+	-o-transition: all 0.12s ease-in-out;
+	-ms-transition: all 0.12s ease-in-out;
+
+}
+
+
+
+.album-margin{
+	margin-bottom:20px!important;
+
+}
+
 
 /********** Specific styles for Ljudkalendern **********/
 
 
 .album-shadow {
-   -moz-box-shadow:    inset 0 0 10px #232323;
-   -webkit-box-shadow: inset 0 0 10px #232323;
-   box-shadow:         inset 0 0 10px #232323;
-}
+   -moz-box-shadow:    inset 0 0 20px #232323;
+   -webkit-box-shadow: inset 0 0 20px #232323;
+   box-shadow:         inset 0 0 20px #232323;
+   }
+
 
 /* fade in on hover of album */
 .fade img{
-   opacity: 0.80;
-   transition: opacity .15s ease-in-out;
-   -moz-transition: opacity .15s ease-in-out;
-   -webkit-transition: opacity .15s ease-in-out;
+/*    opacity: 0.8; */
+
+   	filter: brightness(0.91);
+	/* 	Browser Specific */
+	-webkit-filter: brightness(0.91);
+	-moz-filter: brightness(0.91);
+	-o-filter: brightness(0.91);
+	-ms-filter: brightness(0.91);
+	
+	
+	-webkit-transition: all 0.22s ease-in-out;
+	-moz-transition: all 0.22s ease-in-out;
+	-o-transition: all 0.22s ease-in-out;
+	-ms-transition: all 0.22s ease-in-out;
+	
    }
 
    .fade:hover img{
-      opacity: 1;
-      }
+    opacity: 1;
+      
+   	filter: brightness(1.2);
+	/* 	Browser Specific */
+	-webkit-filter: brightness(1.2);
+	-moz-filter: brightness(1.2);
+	-o-filter: brightness(1.2);
+	-ms-filter: brightness(1.2);
+	
+     }
+	
+	
+	
+	
+	
+	
 	  
-/* fade in on hover of menu links */
-/* !!might be redundant when entire page fade in at once!! */
 .nav-fade li {
    /*background: #fcfcfc;
    padding: 2px 4px;
@@ -290,10 +431,10 @@ a:hover {
 
 
 .container {
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari & Chrome */
+    -o-animation: fadein 3s; /* Opera */
 }
 @keyframes fadein {
     from {

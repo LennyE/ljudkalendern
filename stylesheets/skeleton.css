@@ -122,11 +122,6 @@
         .container .offset-by-fourteen              { padding-left: 672px; }
         .container .offset-by-fifteen               { padding-left: 720px; }
         
-        /** Disable parallax scroll on mobile devices since most don't support smooth animation **/
-        .bg {background:none !important;}
-        
-        /** Disable fade-in on hover effect due to analog pointer input **/
-        .fade img{opacity: 1.0!important;}
     }
 
 
@@ -177,11 +172,6 @@
         .container .offset-by-fourteen,
         .container .offset-by-fifteen { padding-left: 0; }
         
-        /** Disable parallax scroll on mobile devices since most don't support smooth animation **/
-        .bg {background:none !important;}
-        
-        /** Disable fade-in on hover effect due to analog pointer input **/
-        .fade img{opacity: 1.0!important;}
     }
 
 
@@ -215,11 +205,6 @@
         .container .one-third.column,
         .container .two-thirds.column { width: 420px; }
         
-        /** Disable parallax scroll on mobile devices since most don't support smooth animation **/
-        .bg {background:none !important;}
-
-        /** Disable fade-in on hover effect due to analog pointer input **/
-        .fade img{opacity: 1.0!important;}
     }
 
 
