@@ -1,40 +1,41 @@
+/* Developer */
 
-/* TEAM */
-
-	Creator: Lenny Ekberg
-	Twitter: @LennyEkberg
-	Location: Karlshamn, Sweden
+	Creator: 	Lenny Ekberg
+	Site: 		http://lennyekberg.se/
+	Twitter: 	@LennyEkberg
+	Location: 	Karlshamn, Sweden
 	
-	Code guru: Emil Aspman
-	Twitter: @emilaspman
-	Location: Karlshamn, Sweden
 
+/* Thanks */
 
-/* THANKS */
+	Code guru:	Emil Aspman
+	Site: 		http://emilaspman.se/
+	Twitter: 	@emilaspman
+	Location: 	Karlshamn, Sweden
 
 	Skeleton Boilerplate: Dave Gamache
-	Site: http://davegamache.com/skeleton-css/
-	Twitter: @dhg
-	Location: San Francisco, CA
+	Site: 		http://davegamache.com/skeleton-css/
+	Twitter: 	@dhg
+	Location: 	San Francisco, CA
 	
 	Smoothscroll.js: Stuart Langridge
-	Site: http://www.kryogenix.org/code/browser/smoothscroll/
-	Twitter: @sil
-	Location: Stourbridge, UK
+	Site: 		http://www.kryogenix.org/code/browser/smoothscroll/
+	Twitter: 	@sil
+	Location: 	Stourbridge, UK
 	
-	Parallax effect: Sara Vieira
-	Site: http://codepen.io/SaraVieira/pen/fKmHC
-	Twitter: @NikkitaFTW
-	Location: Espinho, Portugal
+	Socialtograms: Steffen Nørgaard Andersen
+	Site: 		https://dribbble.com/shots/922852-Socialtograms/
+	Twitter: 	@iamsteffen
+	Location: 	Denmark
 	
 	Spotify
-	Site: https://www.spotify.com
-	Twitter: @Spotify
-	Location: Stockholm, Sweden
+	Site: 		https://www.spotify.com
+	Twitter: 	@Spotify
+	Location: 	Stockholm, Sweden
 
 
-/* SITE */
+/* Site */
 
-	Site: http://ljudkalendern.se/
-	Description: A digital music advent calendar.
-	Language: Swedish
+	Site: 		http://ljudkalendern.se/
+	Desc: 		A digital music advent calendar.
+	Language: 	Swedish

@@ -1,92 +1,100 @@
 body{
 /* 	background:url(../images/backgrounds/tileable_wood_texture.jpg) repeat; */
-	background:url(../images/backgrounds/unsplash-wood-1440.jpg?=new) repeat-y center center; 
-  background-size: 100%;
-  background-position-y:-80px;
-	
-/*
-	background:url(../images/backgrounds/photo.jpg) repeat;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment:fixed;
-
-/*     background-color:#f5f2ef; */
-    background-color:#fff;
-	line-height:180%;
-	margin-top: 10px;
-	}
-
-
-/*
-.bg {
-	background:url(../images/backgrounds/tileable_wood_texture.jpg) repeat;
-	position: fixed;
-	margin-top:-80px;
-	width: 100%;
-	height: 400%;
-	top:0;
-	left:0;
-	z-index: -1;
+ 	background:url(../images/backgrounds/unsplash-wood-1440.jpg?=new);
+    background-position: top center; 
+    background-repeat: repeat-y;
+    background-size: 100%;
+    background-color: #000;
+    background-position-y: -84px;
 }
-*/
-
 
 #top{
 	position:absolute; top:-99px;
 }
 
-
-section {
-  color: #fff;
-  font-family: arial;
-  width: 500px;
-  margin: auto;
-  line-height: 20px;
-  font-size: 16px;
-}
-
-
 h1,h2,h3,h4,h5,h6{
 }
 
-a,
-a:hover {
-	text-decoration: none;
-	border-bottom:0px hidden #cfcfcf; 
+.footer a,
+.footer a:visited{
+	color:#fff;
 }
-
+.footer a:hover{
+	color:#eee;
+	border-bottom: 1px dotted #cfcfcf;
+}
 
 .container {
 	padding-top:25px;
 	background-color:transparent;
 }
 
+/* !year-menu */
+#mainnav {
+	line-height:40px;
+}
+ 
+#mainnav ul li {
+	display: inline;
+	margin: 0 7px 0 7px;
+	margin-bottom: 12px;
+}
 
+#mainnav li a {
+		text-decoration: none!important;
+		transition: background-color 0.5s ease;
+		background-color: transparent;
+		color: #dfdfdf;
+		padding: 2px 6px 3px 6px;
+		border: 1px hidden #fff;
+		margin: 1px;
+		border-radius: 5px!important;
+}
+
+#mainnav li a:hover {
+		text-decoration: underline;
+		border: 1px solid transparent;
+		border-radius: 5px!important;
+		color:#222;
+		background-color: #fff;
+		margin: 0px;
+
+}
+
+#mainnav .link a:active {
+		text-decoration: underline;
+		border: 1px solid transparent;
+		border-radius: 5px!important;
+		color:#fff;
+		background-color: #3a6ba8;
+}
+
+
+/* !date-menu */
 #nav {
 	padding-bottom:-10px!important;
 	margin-bottom:14px;
 	text-align:center;
 	font-style:italic;
-		font-family: 'Source Code Pro', !important;
-
+	font-family: 'Source Code Pro', !important;
 }
 	
 #nav ul li {
 	display:inline-block;
 	margin-bottom: 0px;
-
 }
 
 #kalendern{
 		margin-top: 8px;
 		margin-bottom: 14px;
 }
+
 ul, ol {
 margin-bottom: 0px;
 }
 
 #nav ul li {
-	/*background:#F0C;*/
+/* 	background:#F0C; */
 	width:32px!important;
 	max-height:52px!important;
 	text-align:center!important;
@@ -95,7 +103,6 @@ margin-bottom: 0px;
 	line-height:45px;
 
 }
-
 
 #nav a {
 	text-align:center!important;
@@ -110,13 +117,11 @@ margin-bottom: 0px;
     line-height:26px;
     background:#efefef;
     
-    
     -webkit-transition: all 0.12s ease-in-out;
 	-moz-transition: all 0.12s ease-in-out;
 	-o-transition: all 0.12s ease-in-out;
 	-ms-transition: all 0.12s ease-in-out;
 }
- 
  
 #nav a:hover {
 	text-decoration: none!important;
@@ -130,39 +135,10 @@ margin-bottom: 0px;
     background:transparent;
 	font-weight:bold;
 	
--webkit-box-shadow: inset 0px 0px 0px 2px #fff;
--moz-box-shadow: inset 0px 0px 0px 2px #fff;
-box-shadow: inset 0px 0px 0px 2px #fff;
+	-webkit-box-shadow: inset 0px 0px 0px 2px #fff;
+	-moz-box-shadow: inset 0px 0px 0px 2px #fff;
+	box-shadow: inset 0px 0px 0px 2px #fff;
 }
-
-
-#mainnav {
-	line-height:40px;
-}
- 
-#mainnav ul li {
-	display: inline;
-	margin: 0 7px 0 7px;
-	margin-bottom: 12px;
-}
- 
-#mainnav a {
-	text-decoration: none!important;
-	border-bottom: 0px hidden transparent;
-	color:#dfdfdf;
-}
- 
-#mainnav .link a:hover {
-	text-decoration: underline;
-	border-bottom: 1px solid #cfcfcf;
-
-}
-
-#mainnav .link a:active {
-	text-decoration: underline;
-	border-bottom: 1px solid #cfcfcf;
-}
-
 
 .feature-image {
 	position: relative;	
@@ -174,47 +150,7 @@ box-shadow: inset 0px 0px 0px 2px #fff;
 	margin-bottom:-8px;
 }
 
-	
-.anfang:first-letter {
- font-size : 50px;
- float : left;
- padding-top:13px;
-}
-
-
-.footer{
-	margin-top:28px;
-	padding-bottom:22px;
-}
-.footer a{
-	text-align:center;
-	text-decoration:none
-}
-
-.bold{
-	font-weight:bold;
-}
-
-.italic{
-	font-style:italic;
-}
-
-.center{
-	text-align:center;
-}
-
-.sup{
-	vertical-align: baseline;
-	font-size: 0.8em;
-	position: relative;
-	top: -0.4em;
-}
-
-
-.bg-color{
-	background-color: aqua;
-}
-
+/* !album-number */
 .album-number{
 	position:absolute;
 	text-shadow: 0px 2px 17px #0f0f0f;
@@ -252,12 +188,8 @@ box-shadow: inset 0px 0px 0px 2px #fff;
 
 }
 
-
-
-
 .album-number-active:hover,
 .album-cover:hover + .album-number-active {
-
 
 	transform:         scale(0.0); 
 	-moz-transform:    scale(0.0); 
@@ -267,35 +199,26 @@ box-shadow: inset 0px 0px 0px 2px #fff;
 	
 	transform-origin:center;
 
- 
  	opacity:0.0;
 	-webkit-transition: all 0.08s ease-in-out;
 	-moz-transition: all 0.12s ease-in-out;
 	-o-transition: all 0.12s ease-in-out;
 	-ms-transition: all 0.12s ease-in-out;
-
 }
-
-
 
 .album-margin{
 	margin-bottom:20px!important;
-
 }
-
-
-/********** Specific styles for Ljudkalendern **********/
-
 
 .album-shadow {
    -moz-box-shadow:    inset 0 0 20px #232323;
    -webkit-box-shadow: inset 0 0 20px #232323;
    box-shadow:         inset 0 0 20px #232323;
-   }
+}
 
 
-/* fade in on hover of album */
-.fade img{
+/* !fade in on album-cover hover */
+.album-cover{
 /*    opacity: 0.8; */
 
    	filter: brightness(0.91);
@@ -305,15 +228,13 @@ box-shadow: inset 0px 0px 0px 2px #fff;
 	-o-filter: brightness(0.91);
 	-ms-filter: brightness(0.91);
 	
-	
 	-webkit-transition: all 0.22s ease-in-out;
 	-moz-transition: all 0.22s ease-in-out;
 	-o-transition: all 0.22s ease-in-out;
-	-ms-transition: all 0.22s ease-in-out;
-	
-   }
+	-ms-transition: all 0.22s ease-in-out;	
+}
 
-   .fade:hover img{
+   .album-cover:hover{
     opacity: 1;
       
    	filter: brightness(1.2);
@@ -321,59 +242,9 @@ box-shadow: inset 0px 0px 0px 2px #fff;
 	-webkit-filter: brightness(1.2);
 	-moz-filter: brightness(1.2);
 	-o-filter: brightness(1.2);
-	-ms-filter: brightness(1.2);
-	
-     }
-	
-	
-	
-	
-	
-	
-	  
-.nav-fade li {
-   /*background: #fcfcfc;
-   padding: 2px 4px;
-   display: inline-block;*/
-   transition: background .25s ease-in-out;
-   -moz-transition: background .25s ease-in-out;
-   -webkit-transition: background .25s ease-in-out;
-   }
-
-	.nav-fade li a{
-		color:#cfcfcf;
-	   }
-
-   .nav-fade li:hover {
-      /*background: #0dd;*/
-	  text-decoration:none;
-      }
-	  
-
-	  
-/* hide vertical text (div) slides on load*/	  
-#first,
-#second,
-#third{
-	display:none;
+	-ms-filter: brightness(1.2);	
 }
-
-.slidemenustyle{
-	background-color:#C93;
-	padding-top:4px;
-	padding-bottom:6px;
-	margin-bottom:16px!important;
-	background-image:url(../images/backgrounds/wovensacktile.jpg);
-    -moz-box-shadow:    inset 0 0 12px #000000;
-    -webkit-box-shadow: inset 0 0 12px #000000;
-    box-shadow:         inset 0 0 12px #000000;
-	}
-.slidemenustyle,
-.slidemenustyle h4,h3{
-	color:#dfdfdf;
-}
-
-
+	
 
 /*******************/
 	
@@ -381,9 +252,120 @@ box-shadow: inset 0px 0px 0px 2px #fff;
      display: inline;
 }
 
+.anfang:first-letter {
+	font-size : 50px;
+	float : left;
+	padding-top:13px;
+}
 
-/* Special styles for music (Spotify) links */
-/* !!Fix underline color!! */
+.footer{
+	color: #fff;
+	margin-top:28px;
+	padding-top: 8px;
+	padding-bottom:42px;
+	background-color: #1c1c1c;
+}
+.footer a{
+	text-align:center;
+	text-decoration:none;
+}
+
+/* !Spotify button */
+.spotifybutton,
+.spotifybutton:visited{
+	width: 92px;
+	height: 22px;
+	border-radius: 10px;	
+	background-color: #84bd00;
+	-webkit-transition: all 0.12s ease-in-out;
+	-moz-transition: all 0.12s ease-in-out;
+	-o-transition: all 0.12s ease-in-out;
+	-ms-transition: all 0.12s ease-in-out;
+	color: #fff;
+	margin: 10px 0px 6px 0px;
+}
+
+.spotifybutton:hover{
+	background-color: #9adb00;
+}
+
+.spotifybutton .buttontext{
+	text-transform: uppercase;
+	font-size: 11.8px;
+	font-weight: bold!important;
+	line-height: 0px;
+	top:11px;
+	right: 12px;
+	position: relative;
+	float:right;
+}
+
+.spotifybutton img{
+	height: 15px;
+	width: 15px;
+	left: 4px;
+	top: 3px;
+	position: relative;
+	float:left;
+}
+
+label{
+	margin-bottom: 4px;
+}
+
+.social-media-icons li{
+	display: inline-block;
+	margin: 10px 8px 0px 0px;
+}
+
+.social-media-icons a:hover{
+	border-bottom:0px hidden #cfcfcf; 
+}
+
+.social-media-icons li img{
+	height: 18px;
+	width: 18px;
+	-webkit-transition: all 0.12s ease-in-out;
+	-moz-transition: all 0.12s ease-in-out;
+	-o-transition: all 0.12s ease-in-out;
+	-ms-transition: all 0.12s ease-in-out;
+
+}
+
+.social-media-icons li img:hover{
+	transform: scale(1.1);
+}
+
+
+
+/* !font-styles */
+.bold{
+	font-weight:bold;
+}
+
+.italic{
+	font-style:italic;
+}
+
+.center{
+	text-align:center;
+}
+
+.sup{
+	vertical-align: baseline;
+	font-size: 0.8em;
+	position: relative;
+	top: -0.4em;
+}
+
+
+
+
+
+
+
+
+/* !Special styles for music (Spotify) links in text */
 .link-playlist{
 	color:#dfdfdc!important;
 	text-decoration:none!important;	
@@ -419,7 +401,6 @@ box-shadow: inset 0px 0px 0px 2px #fff;
 	font-size:18px; /* inspect */
 }
 
-
 .icon16{
 	height: 16px;
 	width: 16px;
@@ -427,14 +408,13 @@ box-shadow: inset 0px 0px 0px 2px #fff;
 
 
 
-/********** Fade in animation **********/
-
+/********** !Fade-in animation **********/
 
 .container {
-    animation: fadein 3s;
-    -moz-animation: fadein 3s; /* Firefox */
-    -webkit-animation: fadein 3s; /* Safari & Chrome */
-    -o-animation: fadein 3s; /* Opera */
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari & Chrome */
+    -o-animation: fadein 4s; /* Opera */
 }
 @keyframes fadein {
     from {
@@ -468,3 +448,64 @@ box-shadow: inset 0px 0px 0px 2px #fff;
         opacity: 1;
     }
 }
+
+
+
+/* !Modified Skeleton buttons (e.g subscribe button)
+===================================================== */
+
+	.half-top { margin-top: 6px !important; }
+	.full-top { margin-top: 14px !important; }
+	
+	.button,
+	button,
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"] {
+		background: transparent; /* Old browsers */
+		border: 1px solid #fff;
+		padding: 4px 10px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		color: #fff;
+		display: inline-block;
+		font-size: 12px;
+		font-weight:normal;
+		text-decoration: none;
+		text-shadow: 0 0px transparent;
+		cursor: pointer;
+		margin-bottom: 20px;
+		line-height: normal;
+		padding: 8px 10px;
+		font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		
+		-webkit-transition: all 0.12s ease-in-out;
+		-moz-transition: all 0.12s ease-in-out;
+		-o-transition: all 0.12s ease-in-out;
+		-ms-transition: all 0.12s ease-in-out;
+		outline: none;
+	}
+
+	.button:hover,
+	button:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover,
+	input[type="button"]:hover {
+		color: #222;
+		background: #fff; /* Old browsers */
+		border: 1px solid #fff;
+		outline: none;
+	}
+
+	.button:active,
+	button:active,
+	input[type="submit"]:active,
+	input[type="reset"]:active,
+	input[type="button"]:active {
+		border: 1px solid #666;
+		background: #fff; /* Old browsers */
+		transform: scale(0.98);
+		color: #222;
+		outline: none!important;
+	}

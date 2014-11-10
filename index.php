@@ -5,7 +5,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-
 	<script src="http://www.livejs.com/live.js"></script>
 
 	 
@@ -223,9 +222,9 @@
 					
 					foreach($data as $i => $d) {
 						echo('<div id="'.$i.'" class="four columns album-margin">
-								<div class="feature-image fade">');
+								<div class="feature-image fadeQWE">');
 									//dagens datum och månad ELLER efter årsskiftet
-									if(date('d') >= $i && date('n') >= 10 || date('Y') > 2013 ) {
+									if(date('d') >= $i && date('n') >= 11 || date('Y') > 2014 ) {
 									
 										//get album art url from Spotify
 										$album = "spotify:album:".$d[0]."";
@@ -303,18 +302,52 @@
 		<div class="footer">
 		
 		    <div class="container">
-				    
-		    	<div id="mainnav" style="margin-bottom:0px;" class="sixteen columns center">
-					<!--<ul>
-						<li class="link"><a href="https://www.facebook.com/Ljudkalendern">Facebook</a></li>
-						<li class="link"><a href="http://instagram.com/ljudkalendern">Instagram</a></li>
-						<li class="link"><a href="https://twitter.com/ljudkalendern">Twitter</a></li>
-						<li class="link"><a href="http://open.spotify.com/user/ljudkalendern">Spotify</a></li>
-					</ul>-->
-					<ul style="margin-top:-25px;">
-						<li class="link"><a href="mailto:hej@ljudkalendern.se?subject=Ljudkalendern">hej@ljudkalendern.se</a></li>
+		    
+		    	<div class="seven columns">
+					<label>Om Ljudkalendern</label>
+					Ljudkalendern delger december månad ett axplock av den utgivna musiken från det gångna året, med förhoppningar om att väcka nyfikenhet inför framtiden — kanske blir det så att du finner en eller flera nya godbitar här i jul!
+ 			    	<a href="spotify://user/ljudkalendern">
+						<div class="spotifybutton"><img src="images/icons/spotify-32-white.png"><span class="buttontext">Follow</span></div>
+					</a>
+		    	</div>
+		    
+		    	<div class="five columns">
+					<!-- Begin MailChimp Signup Form -->
+					<div id="mc_embed_signup">
+					<form action="//ljudkalendern.us9.list-manage.com/subscribe/post?u=3ec2953a011ec25e52b8bea44&amp;id=03ed4f7fdc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					    <div id="mc_embed_signup_scroll">
+						
+					<div class="mc-field-group">
+						<label for="mce-EMAIL">Nyhetsbrev</label>
+						De senaste nyheterna om Ljudkalendern, tävlingar och erbjudanden med mera.
+						<input type="email" value="" placeholder="E-postadress" name="EMAIL" class="required email half-bottom half-top" id="mce-EMAIL">
+					</div>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					    <div style="position: absolute; left: -5000px;"><input type="text" name="b_3ec2953a011ec25e52b8bea44_03ed4f7fdc" tabindex="-1" value=""></div>
+					    <div class="show"><input type="submit" value="Prenumerera" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					    </div>
+					</form>
+					</div>
+					<!--End mc_embed_signup-->
+		    	</div>
+		    	
+		    	<div class="four columns">
+					<label>Kontakta</label>
+					<a href="mailto:hej@ljudkalendern.se?subject=Ljudkalendern">hej@ljudkalendern.se</a>
+					<label class="full-top">Media</label>
+					<a target="_blank" href="https://tagboard.com/ljudkalendern/198059">&#35;ljudkalendern</a><br>
+					
+					<ul class="social-media-icons">
+						<li><a target="_blank" href="http://open.spotify.com/user/ljudkalendern"><img src="images/icons/spotify-32-white.png"></a></li>
+						<li><a target="_blank" href="https://www.facebook.com/Ljudkalendern"><img src="images/icons/facebook-32-white.png"></a></li>
+						<li><a target="_blank" href="https://twitter.com/ljudkalendern"><img src="images/icons/twitter-32-white.png"></a></li>
+						<li><a target="_blank" href="http://instagram.com/ljudkalendern"><img src="images/icons/instagram-32-white.png"></a></li>
 					</ul>
-				</div>
+		    	</div>
+		    	
 			</div>
 		    
 		</div>
@@ -334,4 +367,3 @@
 	</script>
 	
 </html>
-
