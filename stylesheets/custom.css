@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .container {
-	padding-top:25px;
+/* 	padding-top:25px; */
 	background-color:transparent;
 }
 
@@ -166,6 +166,7 @@ margin-bottom: 0px;
 	-o-transition: all 0.12s ease-in-out;
 	-ms-transition: all 0.12s ease-in-out;
 	cursor: default;
+	-webkit-user-select: none;
 }
 
 .album-number-active{
@@ -221,17 +222,20 @@ margin-bottom: 0px;
 .album-cover{
 /*    opacity: 0.8; */
 
+/*
    	filter: brightness(0.91);
-	/* 	Browser Specific */
 	-webkit-filter: brightness(0.91);
 	-moz-filter: brightness(0.91);
 	-o-filter: brightness(0.91);
 	-ms-filter: brightness(0.91);
+*/
 	
 	-webkit-transition: all 0.22s ease-in-out;
 	-moz-transition: all 0.22s ease-in-out;
 	-o-transition: all 0.22s ease-in-out;
 	-ms-transition: all 0.22s ease-in-out;	
+	
+	-webkit-user-select: none;
 }
 
    .album-cover:hover{
@@ -246,7 +250,79 @@ margin-bottom: 0px;
 }
 	
 
-/*******************/
+/*** !header (with different logo-layouts) ***/
+/*** NB! USES #id, NOT .class ***/
+
+#ios-header{
+	color: #fff;
+	padding-top: 28px;
+	padding-bottom: 4px;
+/* 	background-color: #1c1c1c; */
+	background-color: rgba(28,28,28,1.0);
+	position: fixed;
+	top:0px;
+	left:0px;
+	width: 100%;
+	z-index: 9000;
+	visibility: collapse;
+	-webkit-user-select: none;
+}
+
+#ios-header-padding{
+	visibility: collapse;
+}
+
+
+#logo {
+	margin-top: 20px!important;
+	visibility: visible;
+	-webkit-user-select: none;
+}
+
+/* !show iOS style menubar on apples mobile devices */
+@media only screen and
+	/* !iPads (portrait and landscape) */
+	(min-device-width : 768px) and (max-device-width : 1024px),
+	/* !iPhone 6+ */
+	(min-device-width : 414px) and (max-device-width : 736px),
+	/* !iPhone 6 */
+	(min-device-width : 375px) and (max-device-width : 667px),
+	/* !iPhone 5, 5C, 5S, iPod Touch 5g */
+	(min-device-width : 320px) and (max-device-width : 568px){
+	
+		/* specific styles */
+		#ios-header{
+			background-color: rgba(28,28,28,1.0)!important;
+			visibility: visible;
+		}
+		
+		#ios-header-padding{
+			visibility: visible;
+			margin-top: 64px;
+		}
+		
+		#logo {
+/* 			visibility: collapse; don't use, hides in-browser on iOS */ 
+		}
+
+}
+
+
+.header a{
+	text-align:center;
+	text-decoration:none;
+}
+
+
+.header .container .bgc{
+	background-color: aqua;
+}
+
+
+
+
+
+/******** !footer ***********/
 	
 .nobreak {
      display: inline;
@@ -262,13 +338,18 @@ margin-bottom: 0px;
 	color: #fff;
 	margin-top:28px;
 	padding-top: 8px;
-	padding-bottom:42px;
+	padding-bottom:22px;
 	background-color: #1c1c1c;
 }
 .footer a{
 	text-align:center;
 	text-decoration:none;
 }
+
+.footer .container .space-bottom{
+	margin-bottom: 20px;
+}
+
 
 /* !Spotify button */
 .spotifybutton,
@@ -310,7 +391,7 @@ margin-bottom: 0px;
 }
 
 label{
-	margin-bottom: 4px;
+	margin: 12px 0px 4px 0px;
 }
 
 .social-media-icons li{
@@ -337,7 +418,6 @@ label{
 }
 
 
-
 /* !font-styles */
 .bold{
 	font-weight:bold;
@@ -357,11 +437,6 @@ label{
 	position: relative;
 	top: -0.4em;
 }
-
-
-
-
-
 
 
 
@@ -485,6 +560,8 @@ label{
 		-o-transition: all 0.12s ease-in-out;
 		-ms-transition: all 0.12s ease-in-out;
 		outline: none;
+		
+		-webkit-appearance: none;
 	}
 
 	.button:hover,
@@ -496,6 +573,8 @@ label{
 		background: #fff; /* Old browsers */
 		border: 1px solid #fff;
 		outline: none;
+		
+		-webkit-appearance: none;
 	}
 
 	.button:active,
@@ -508,4 +587,6 @@ label{
 		transform: scale(0.98);
 		color: #222;
 		outline: none!important;
+		
+		-webkit-appearance: none;
 	}

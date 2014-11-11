@@ -1,15 +1,31 @@
-		<div id="mainnav" class="sixteen columns center"><!--center in class-->
-            <span class="feature-image">
-            	<a href="index.php">
-            		<img style="max-width:250px;" src="images/logo/logo.png" alt="logo">
-            	</a>
-            </span>
-
-			<!--
-			<ul>
-				<li class="link"><a href="index.php">2014</a></li>
-				<li class="link"><a href="2013.php">2013</a></li>
-				<li class="link"><a href="#">2012</a></li>
-			</ul>
-			-->
+		<!-- iOS -->
+		<div id="ios-header" class="fadein">
+		
+		    <div class="container">
+		    
+		    	<div class="sixteen columns center">
+					<a href="index.php">
+	            		<img style="max-width:150px;" src="images/logo/logo.png" alt="Ljudkalendern">
+					</a>
+		    	</div>
+		    	
+		    </div><!--end container-->
+		    
 		</div>
+		
+		<!-- desktop -->
+		<div id="logo" class="fadein">
+		
+		    <div class="container">
+		    
+		    	<div class="sixteen columns center">
+					<a href="index.php">
+	            		<img style="max-width:250px;" src="images/logo/logo.png" alt="Ljudkalendern">
+					</a>
+		    	</div>
+		    	
+		    </div><!--end container-->
+		    
+		</div>
+		
+		<div id="ios-header-padding"></div>

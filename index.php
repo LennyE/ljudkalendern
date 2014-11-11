@@ -6,8 +6,7 @@
 <head>
 
 	<script src="http://www.livejs.com/live.js"></script>
-
-	 
+	
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
@@ -31,19 +30,14 @@
 	<!--<script src="javascripts/jquery-1.10.2.min.js"></script>-->
 	<script  src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-	<!-- Parallax scroll
+	<!-- Standalone (iOS full screen web app)
 	================================================== -->
-<!-- 	<script async src="javascripts/parallaxbg.js"></script> -->
+	<script async type="text/javascript" src="javascripts/standalone.js"></script>
 
-	<!-- Smoothscroll (autoscroll till lucka)
+	<!-- Smoothscroll (auto-scroll to number)
 	================================================== -->
 	<script async type="text/javascript" src="javascripts/smoothscroll.js"></script>
 	<!--<script type="text/javascript">window.addEvent('domready',function() { new SmoothScroll({ duration: 1800 }); });</script>-->
-
-	<!-- Show/hide div
-	================================================== -->
-	<!--<script src="javascripts/jquery-1.7.1.min.js"></script>-->		 
-	<script async src="javascripts/showhide-div.js"></script>
 
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -127,8 +121,6 @@
 	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image3.jpg" />
 	<meta property="og:url" content="http://ljudkalendern.se" />
 		
-
-
 	<!-- Insights -->
 	<meta property="fb:admins" content="717632778" />
 	
@@ -141,14 +133,15 @@
 <body>
 
 <div class="bg"></div> <!-- bg class used by Parallax scroll -->
-<span id="top">&nbsp;</span><!-- scroll to top, ej aktiv. -->
+<span id="top">&nbsp;</span><!-- scroll to top, inactive -->
 
 	<!-- Primary Page Layout
 	================================================== -->
 	
+	<?php include('menuitems.php'); ?>
+	
 	<div class="container">
 
-			<?php include('menuitems.php'); ?>
 
 					<!-- menu -->
 					<div id="nav" class="sixteen columns nav-fade">
@@ -303,7 +296,7 @@
 		
 		    <div class="container">
 		    
-		    	<div class="seven columns">
+		    	<div class="seven columns space-bottom">
 					<label>Om Ljudkalendern</label>
 					Ljudkalendern delger december månad ett axplock av den utgivna musiken från det gångna året, med förhoppningar om att väcka nyfikenhet inför framtiden — kanske blir det så att du finner en eller flera nya godbitar här i jul!
  			    	<a href="spotify://user/ljudkalendern">
@@ -338,7 +331,7 @@
 					<label>Kontakta</label>
 					<a href="mailto:hej@ljudkalendern.se?subject=Ljudkalendern">hej@ljudkalendern.se</a>
 					<label class="full-top">Media</label>
-					<a target="_blank" href="https://tagboard.com/ljudkalendern/198059">&#35;ljudkalendern</a><br>
+					<a target="_blank" href="http://www.hashatit.com/hashtags/ljudkalendern">&#35;ljudkalendern</a><br>
 					
 					<ul class="social-media-icons">
 						<li><a target="_blank" href="http://open.spotify.com/user/ljudkalendern"><img src="images/icons/spotify-32-white.png"></a></li>
@@ -348,7 +341,7 @@
 					</ul>
 		    	</div>
 		    	
-			</div>
+			</div><!--end container-->
 		    
 		</div>
 
