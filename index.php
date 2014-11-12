@@ -5,7 +5,24 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-	<script src="http://www.livejs.com/live.js"></script>
+<!-- 	<script src="http://www.livejs.com/live.js"></script> -->
+
+	<!-- Standalone (iOS full screen web app)
+	================================================== -->
+	<script type="text/javascript" src="javascripts/standalone.js"></script>
+	
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Android (Chrome full-screen app mode / application shortcut) -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="nice-highres.png"> <!--NB! NEED ICON FOR ANDROID-->
+
+	<!-- Apple -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="Ljudkalendern">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	
 	<!-- Basic Page Needs
 	================================================== -->
@@ -13,85 +30,48 @@
 	<title>Ljudkalendern 2014</title>
 	<meta name="description" content="Ljudkalendern &mdash; En kalender fylld med h&auml;rlig musik fr&aring;n &aring;ret som g&aring;tt!">
 	<meta name="author" content="Lenny Ekberg">
+	
 
 	<!-- CSS
 	================================================== -->
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/custom.css?=new">
-
-	<!-- Humans.txt
-	================================================== -->
-	<link type="text/plain" rel="author" href="http://ljudkalendern.se/humans.txt" />
+	<link rel="stylesheet" href="stylesheets/custom.css">
 
 	<!-- jQuery
 	================================================== -->
 	<!--<script src="javascripts/jquery-1.10.2.min.js"></script>-->
-	<script  src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-	<!-- Standalone (iOS full screen web app)
-	================================================== -->
-	<script async type="text/javascript" src="javascripts/standalone.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 	<!-- Smoothscroll (auto-scroll to number)
 	================================================== -->
-	<script async type="text/javascript" src="javascripts/smoothscroll.js"></script>
+	<script type="text/javascript" src="javascripts/smoothscroll.js"></script>
 	<!--<script type="text/javascript">window.addEvent('domready',function() { new SmoothScroll({ duration: 1800 }); });</script>-->
 
-	<!-- Mobile Specific Metas
+
+	<!-- iOS startup images
 	================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-<!-- 	<meta name="viewport" content="minimal-ui"> -->
-<!--
-	Android
-	<meta name="mobile-web-app-capable" content="yes">
-	<link rel="icon" sizes="192x192" href="nice-highres.png">
--->
-	<!-- Apple -->
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<!-- iPad Retina Landscape -->
-<!-- iPhone -->
-<link href="static/images/apple-touch-startup-image-320x460.png"
-      media="(device-width: 320px) and (device-height: 480px)
-         and (-webkit-device-pixel-ratio: 1)"
-      rel="apple-touch-startup-image">
-<!-- iPhone (Retina) -->
-<link href="static/images/apple-touch-startup-image-640x920.png"
-      media="(device-width: 320px) and (device-height: 480px)
-         and (-webkit-device-pixel-ratio: 2)"
-      rel="apple-touch-startup-image">
-<!-- iPhone 5 -->
-<link href="static/images/apple-touch-startup-image-640x1096.png"
-      media="(device-width: 320px) and (device-height: 568px)
-         and (-webkit-device-pixel-ratio: 2)"
-      rel="apple-touch-startup-image">
-<!-- iPad (portrait) -->
-<link href="static/images/apple-touch-startup-image-768x1004.png"
-      media="(device-width: 768px) and (device-height: 1024px)
-         and (orientation: portrait)
-         and (-webkit-device-pixel-ratio: 1)"
-      rel="apple-touch-startup-image">
-<!-- iPad (landscape) -->
-<link href="static/images/apple-touch-startup-image-748x1024.png"
-      media="(device-width: 768px) and (device-height: 1024px)
-         and (orientation: landscape)
-         and (-webkit-device-pixel-ratio: 1)"
-      rel="apple-touch-startup-image">
-<!-- iPad (Retina, portrait) -->
-<link href="static/images/apple-touch-startup-image-1536x2008.png"
-      media="(device-width: 768px) and (device-height: 1024px)
-         and (orientation: portrait)
-         and (-webkit-device-pixel-ratio: 2)"
-      rel="apple-touch-startup-image">
-<!-- iPad (Retina, landscape) -->
-<link href="static/images/apple-touch-startup-image-1496x2048.png"
-      media="(device-width: 768px) and (device-height: 1024px)
-         and (orientation: landscape)
-         and (-webkit-device-pixel-ratio: 2)"
-      rel="apple-touch-startup-image">
+	<!-- iPhone -->
+	<link href="apple-touch-startup-image-320x460.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+	<!-- iPhone (Retina) -->
+	<link href="apple-touch-startup-image-640x920.jpg" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<!-- iPhone 5 -->
+	<link href="apple-touch-startup-image-640x1096.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<!-- iPhone 6 -->
+	<link href="apple-touch-startup-image-750x1294.jpg" media="(device-width: 375px) and (device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<!-- iPhone 6+ Portrait -->
+	<link href="apple-touch-startup-image-1242x2148.jpg" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+	<!-- iPhone 6+ Landscape -->
+	<link href="apple-touch-startup-image-2208x1182.jpg" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+	<!-- iPad (portrait) -->
+	<link href="apple-touch-startup-image-768x1004.jpg" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+	<!-- iPad (landscape) -->
+	<link href="apple-touch-startup-image-748x1024.jpg" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+	<!-- iPad (Retina, portrait) -->
+	<link href="apple-touch-startup-image-1536x2008.jpg" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<!-- iPad (Retina, landscape) -->
+	<link href="apple-touch-startup-image-1496x2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -110,6 +90,15 @@
 	<!-- Retina iPad --> 
 	<link rel="apple-touch-icon" sizes="144x144" href="touch-icon-ipad-144.png" />
 
+
+	<!-- iPhone & iPod Touch (Non-Retina) -->
+	<link rel="apple-touch-icon" href="apple-touch-icon-iphone.png">
+	<!-- iPad 2 & iPad mini (Non-Retina) -->
+	<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+	<!-- iPhone & iPod Touch (Retina) -->
+	<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+	<!-- iPad & iPad mini (Retina) -->
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
 	
 	<!-- Open graph
 	================================================== -->
@@ -128,6 +117,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,700' rel='stylesheet' type='text/css'>
 
+	<!-- Humans.txt
+	================================================== -->
+	<link type="text/plain" rel="author" href="http://ljudkalendern.se/humans.txt" />
 
 </head>
 <body>

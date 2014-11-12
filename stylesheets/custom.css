@@ -250,35 +250,38 @@ margin-bottom: 0px;
 }
 	
 
-/*** !header (with different logo-layouts) ***/
+
+/*** !header with different top-layouts depending on device ***/
 /*** NB! USES #id, NOT .class ***/
-
-#ios-header{
-	color: #fff;
-	padding-top: 28px;
-	padding-bottom: 4px;
-/* 	background-color: #1c1c1c; */
-	background-color: rgba(28,28,28,1.0);
-	position: fixed;
-	top:0px;
-	left:0px;
-	width: 100%;
-	z-index: 9000;
-	visibility: collapse;
-	-webkit-user-select: none;
-}
-
-#ios-header-padding{
-	visibility: collapse;
-}
+/*** Media queries first to avoid flickring ***/
 
 
 #logo {
 	margin-top: 20px!important;
 	visibility: visible;
 	-webkit-user-select: none;
+
 }
 
+#ios-header{
+	visibility: collapse;
+	color: #fff;
+	padding-top: 28px;
+	padding-bottom: 4px;
+/* 	background-color: #1c1c1c; */
+	background-color: rgba(28,28,28,1.0);
+	position: fixed;
+	top:-70px;
+	left:0px;
+	width: 100%;
+	z-index: 9000;
+	-webkit-user-select: none;
+	
+}
+
+#ios-header-padding{
+	visibility: collapse;
+}
 /* !show iOS style menubar on apples mobile devices */
 @media only screen and
 	/* !iPads (portrait and landscape) */
@@ -290,23 +293,55 @@ margin-bottom: 0px;
 	/* !iPhone 5, 5C, 5S, iPod Touch 5g */
 	(min-device-width : 320px) and (max-device-width : 568px){
 	
-		/* specific styles */
+		#logo {
+			/* visibility: collapse; don't use, hides in-browser on iOS */ 
+		}
+
 		#ios-header{
 			background-color: rgba(28,28,28,1.0)!important;
+			opacity: 1.0;
 			visibility: visible;
+			
+			-webkit-animation: slide-in-top 2s forwards; /* Safari 4+ */
+			-moz-animation:    slide-in-top 2s forwards; /* Fx 5+ */
+			-o-animation:      slide-in-top 2s forwards; /* Opera 12+ */
+			animation:         slide-in-top 2s forwards; /* IE 10+, Fx 29+ */
+			
+			-webkit-animation-iteration-count: 1;
+			-moz-animation-iteration-count: 1;
+			-o-animation-iteration-count: 1;
+			animation-iteration-count: 1;
+			
+		
+			-webkit-animation-delay: 1s;
+		    -moz-animation-delay: 1s;
+		    -o-animation-delay: 1s;
+		    animation-delay: 1s;
 		}
 		
+		    @-webkit-keyframes slide-in-top {
+			  0%   { top: -70px; }
+			  100% { top: 0px; }
+			}
+			@-moz-keyframes slide-in-top {
+			  0%   { top: -70px; }
+			  100% { top: 0px; }
+			}
+			@-o-keyframes slide-in-top {
+			  0%   { top: -70px; }
+			  100% { top: 0px; }
+			}
+			@keyframes slide-in-top {
+			  0%   { top: -70px; }
+			  100% { top: 0px; }
+			}
+
 		#ios-header-padding{
 			visibility: visible;
 			margin-top: 64px;
 		}
-		
-		#logo {
-/* 			visibility: collapse; don't use, hides in-browser on iOS */ 
-		}
 
 }
-
 
 .header a{
 	text-align:center;
@@ -318,7 +353,7 @@ margin-bottom: 0px;
 	background-color: aqua;
 }
 
-
+/*** end !header ***/
 
 
 
