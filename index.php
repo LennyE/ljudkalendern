@@ -5,11 +5,11 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-<!-- 	<script src="http://www.livejs.com/live.js"></script> -->
+	<script src="http://www.livejs.com/live.js"></script>
 
 	<!-- Standalone (iOS full screen web app)
 	================================================== -->
-	<script type="text/javascript" src="javascripts/standalone.js"></script>
+	<script type="text/javascript" src="javascripts/swapheader.js"></script>
 	
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -130,7 +130,7 @@
 	<!-- Primary Page Layout
 	================================================== -->
 	
-	<?php include('menuitems.php'); ?>
+	<?php include('header.php'); ?>
 	
 	<div class="container">
 
@@ -207,7 +207,7 @@
 					
 					foreach($data as $i => $d) {
 						echo('<div id="'.$i.'" class="four columns album-margin">
-								<div class="feature-image fadeQWE">');
+								<div class="feature-image">');
 									//dagens datum och månad ELLER efter årsskiftet
 									if(date('d') >= $i && date('n') >= 11 || date('Y') > 2014 ) {
 									
@@ -253,22 +253,29 @@
 
 
 										if (file_exists($filepath)) {
-											echo('<a href="spotify://album/'.$d[0].'">
-													<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
-												<span class="album-number-active">'.$i.'</span>
-												</a>');
-											flush(); //visar albumen efterhand de laddas
+											echo('<div class="album-cover">
+													<a href="spotify://album/'.$d[0].'">
+														<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
+														<div class="album-number-active">'.$i.'</div>
+													</a>
+												  </div>');
+											
+/* 											flush(); // show content while loading */
 										}
 										else {
+											/* adds uncached images to server */
 										    $destdir = ''.$folder.'';
 										    $img=file_get_contents($spotify_cdn_url);
 										    file_put_contents($destdir.substr($spotify_cdn_url, strrpos($spotify_cdn_url,'/')), $img);
 										    
-										    echo('<a href="spotify://album/'.$d[0].'">
-													<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
-												<span class="album-number-active">'.$i.'</span>
-												</a>');
-											flush(); //visar albumen efterhand de laddas
+											echo('<div class="album-cover">
+													<a href="spotify://album/'.$d[0].'">
+														<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
+														<div class="album-number-active">'.$i.'</div>
+													</a>
+												  </div>');
+												  
+/* 											flush(); // show content while loading */
 										}
 									
 									} 
