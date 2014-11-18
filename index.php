@@ -37,7 +37,7 @@
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/custom.css">
+	<link rel="stylesheet" href="stylesheets/custom.css?=qwe">
 
 	<!-- jQuery
 	================================================== -->
@@ -148,30 +148,30 @@
 					<?php 
 					
 					$data = array(
-						1 => array('4KyGV3oBIMDeP2C5OmhYsd'), /* svenska björnstammen */
-						2 => array('1dKh4z5Aayt8FFDWjO5FDh'), /* future islands */
-						3 => array('7aC8ce2LQ6IZRROYJw63oS'), /* faråker */
-						4 => array('22cFcAQkydpTzeSKQZEKv0'), /* foster the people */
-						5 => array('6a8GZWPmLWWTUDsQ61yAro'), /* timbuktu */
-						6 => array('4cntNMQjpROMQmevKb8H9f'), /* of mice & men */
-						7 => array('2jgb0dt6ix8RRvJWmDRb5Z'), /* yelle */
-						8 => array('7lzl1Qfv4NqSmypuKmF07l'), /* röyksopp */
-						9 => array('2pza66DUreALycIoqlieMo'), /* milky chance */
-						10 => array('6TbkWAqqY4nhQnYim61IU8'), /* alt-j */
-						11 => array('5sCsfubNchaI9RCpP7K7aB'), /* jenny lewis */
-						12 => array('0U78mbujuFjpprS0G9QcTx'), /* chromeo */
-						13 => array('0cnNCK2xpudXjB8pzsrYy9'), /* bleechers */
-						14 => array('3GsZ6BxwhIVtOUrOZg8Jm7'), /* cazzette */
-						15 => array('22F5JWqnUh0qchqI2wQfS0'), /* the kooks */
-						16 => array('7HxQpGRaQXPudaP1t8E6n9'),
-						17 => array('0t0QkoTnDz5uj5I92C7wwE'),
-						18 => array('7DJgfpwm8MT0Kd3yqjb6eg'),
-						19 => array('7DQ9r7wFUUtpJcQrKiiS02'),
-						20 => array('4WnkQO4xD9ljQooB3VIxCV'),
-						21 => array('67y5PUQ8B4qX7BpWu55uF6'),
-						22 => array('1L19oPU0umN0bd2N1QQXJw'),
-						23 => array('3PYpxrfvtSy2OmgiDbrjGM'),
-						24 => array('2Qi2SySN2ePZwMLDSv9Krn'),
+						1 => array('4KyGV3oBIMDeP2C5OmhYsd'),	/* svenska björnstammen */
+						2 => array('1dKh4z5Aayt8FFDWjO5FDh'),	/* future islands */
+						3 => array('7aC8ce2LQ6IZRROYJw63oS'),	/* faråker */
+						4 => array('22cFcAQkydpTzeSKQZEKv0'),	/* foster the people */
+						5 => array('5sCsfubNchaI9RCpP7K7aB'),	/* jenny lewis */
+						6 => array('6a8GZWPmLWWTUDsQ61yAro'),	/* timbuktu */
+						7 => array('2jgb0dt6ix8RRvJWmDRb5Z'),	/* yelle */
+						8 => array('7lzl1Qfv4NqSmypuKmF07l'),	/* röyksopp */
+						9 => array('2pza66DUreALycIoqlieMo'),	/* milky chance */
+						10 => array('5PFlV6ufZ6kR4znYJC1HB2'),	/* casa murilo  */
+						11 => array('4cntNMQjpROMQmevKb8H9f'),	/* of mice & men */ 
+						12 => array('0U78mbujuFjpprS0G9QcTx'),	/* chromeo */
+						13 => array('1wHOjPgthvvf35Hne9XCbB'),	/* catey shaw */
+						14 => array('3GsZ6BxwhIVtOUrOZg8Jm7'),	/* cazzette */
+						15 => array('59cst3IGDjIGjXYX0WGONI'),	/* maybeshewill */
+						16 => array('0AzzkKWd53eUoJOl4gl7Ns'),	/* haerts */
+						17 => array('6VJyshPiSoQP4kreHOl3Ul'),	/* we are twin */
+						18 => array('4Z1kH6bfeeMYtCuhnR4vEr'),	/* the fray */ 
+						19 => array('5IRRC3nCfo3LygsxQ6AWKB'),	/* biffy clyro */
+						20 => array('26OaztCSd0sLflvdtQRmWa'),	/* blackbird blackbird */
+						21 => array('2CslpGBJenq4K5NtuMXMgM'),	/* architecture in helsinki */
+						22 => array('1DXIAzh9HNmv1q06kcMIXB'),	/* wolf gang */
+						23 => array('0fBbwN05YlFoCbpmhxte2G'),	/* fanfarlo */
+						24 => array('0rk5czGKHLHVD0UYSz2cNB'),	/* seinabo sey */
 					);
 
 
@@ -209,7 +209,7 @@
 						echo('<div id="'.$i.'" class="four columns album-margin">
 								<div class="feature-image">');
 									//dagens datum och månad ELLER efter årsskiftet
-									if(date('d') >= $i && date('n') >= 11 || date('Y') > 2014 ) {
+									if(date('d') >= $i && date('n') >= 11 || date('Y') > 2013 ) {
 									
 										//get album art url from Spotify
 										$album = "spotify:album:".$d[0]."";
@@ -280,7 +280,7 @@
 									
 									} 
 									else {
-										echo('<img class="album-shadow" src="images/albumcovers/empty_transp.png" alt="empty_dark.png">
+										echo('<img class="album-shadow" src="images/backgrounds/empty_transp.png" alt="empty_dark.png">
 											<div class="album-number">'.$i.'</div>');
 									}
 								echo('</div>

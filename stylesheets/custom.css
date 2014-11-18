@@ -172,7 +172,8 @@ margin-bottom: 0px;
 
 .album-number-active{
 	position:absolute;
-	text-shadow: 0px 2px 17px #0f0f0f;
+/* 	text-shadow: 0px 2px 17px #0f0f0f; */
+	text-shadow: 0px 0px 8px #000;
 	text-align:center;
 	top: 42%;
 	width: 100%;
@@ -187,6 +188,7 @@ margin-bottom: 0px;
 	cursor: default;
 	-webkit-user-select: none;
 
+/* 	background-color: aqua; */
 }
 
 .album-number-active:hover,
@@ -258,13 +260,15 @@ margin-bottom: 0px;
 
 #logo {
 	margin-top: 20px!important;
-	visibility: visible;
+/* 	visibility: visible; */
 	-webkit-user-select: none;
+	display: none;
 
 }
 
 #ios-header{
-	visibility: collapse;
+	display: none;
+/* 	visibility: collapse; */
 	color: #fff;
 	padding-top: 28px;
 	padding-bottom: 4px;
@@ -280,7 +284,8 @@ margin-bottom: 0px;
 }
 
 #ios-header-padding{
-	visibility: collapse;
+/* 	visibility: collapse; */
+	display: none;
 }
 /* !show iOS style menubar on apples mobile devices */
 @media only screen and
@@ -295,12 +300,12 @@ margin-bottom: 0px;
 	
 		#logo {
 			/* visibility: collapse; don't use, hides in-browser on iOS */ 
+			display: none;
 		}
 
 		#ios-header{
 		
 			background-color: rgba(28,28,28,1.0)!important;
-			opacity: 1.0;
 			visibility: visible;
 			-webkit-animation: slide-in-top 2s forwards; /* Safari 4+ */
 			-moz-animation:    slide-in-top 2s forwards; /* Fx 5+ */
@@ -314,10 +319,10 @@ margin-bottom: 0px;
 			
 		
 
-			-webkit-animation-delay: 1.2s;
-		    -moz-animation-delay: 1.2s;
-		    -o-animation-delay: 1.2s;
-		    animation-delay: 1.2s;
+			-webkit-animation-delay: 0.5s;
+		    -moz-animation-delay: 0.5s;
+		    -o-animation-delay: 0.5s;
+		    animation-delay: 0.5s;
 		}
 		
 		    @-webkit-keyframes slide-in-top {
@@ -355,7 +360,6 @@ margin-bottom: 0px;
 }
 
 /*** end !header ***/
-
 
 
 /******** !footer ***********/
