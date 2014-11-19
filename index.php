@@ -209,7 +209,7 @@
 						echo('<div id="'.$i.'" class="four columns album-margin">
 								<div class="feature-image">');
 									//dagens datum och månad ELLER efter årsskiftet
-									if(date('d') >= $i && date('n') >= 11 || date('Y') > 2013 ) {
+									if(date('d') >= $i && date('n') >= 11 || date('Y') > 2014 ) {
 									
 										//get album art url from Spotify
 										$album = "spotify:album:".$d[0]."";
@@ -253,7 +253,7 @@
 
 
 										if (file_exists($filepath)) {
-											echo('<div class="album-cover">
+											echo('<div class="album-cover-wrap">
 													<a href="spotify://album/'.$d[0].'">
 														<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
 														<div class="album-number-active">'.$i.'</div>
