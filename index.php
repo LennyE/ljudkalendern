@@ -5,11 +5,11 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-	<script src="http://www.livejs.com/live.js"></script>
+<!-- 	<script src="http://www.livejs.com/live.js"></script> -->
 
 	<!-- Standalone (iOS full screen web app)
 	================================================== -->
-	<script type="text/javascript" src="javascripts/swapheader.js"></script>
+	<script type="text/javascript" src="javascripts/swapheader.js" async></script>
 	
 	<!-- Mobile Specific Metas
 	================================================== -->
@@ -17,7 +17,6 @@
 	
 	<!-- Android (Chrome full-screen app mode / application shortcut) -->
 	<meta name="mobile-web-app-capable" content="yes">
-	<link rel="icon" sizes="192x192" href="nice-highres.png"> <!--NB! NEED ICON FOR ANDROID-->
 
 	<!-- Apple -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -29,15 +28,13 @@
 	<meta charset="utf-8">
 	<title>Ljudkalendern 2014</title>
 	<meta name="description" content="Ljudkalendern &mdash; En kalender fylld med h&auml;rlig musik fr&aring;n &aring;ret som g&aring;tt!">
-	<meta name="author" content="Lenny Ekberg">
-	
 
 	<!-- CSS
 	================================================== -->
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
-	<link rel="stylesheet" href="stylesheets/custom.css?=qwe">
+	<link rel="stylesheet" href="stylesheets/custom.css">
 
 	<!-- jQuery
 	================================================== -->
@@ -48,7 +45,6 @@
 	================================================== -->
 	<script type="text/javascript" src="javascripts/smoothscroll.js"></script>
 	<!--<script type="text/javascript">window.addEvent('domready',function() { new SmoothScroll({ duration: 1800 }); });</script>-->
-
 
 	<!-- iOS startup images
 	================================================== -->
@@ -63,7 +59,7 @@
 	<!-- iPhone 6+ Portrait -->
 	<link href="apple-touch-startup-image-1242x2148.jpg" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
 	<!-- iPhone 6+ Landscape -->
-	<link href="apple-touch-startup-image-2208x1182.jpg" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
+	<link href="apple-touch-startup-image-1182x2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image">
 	<!-- iPad (portrait) -->
 	<link href="apple-touch-startup-image-768x1004.jpg" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
 	<!-- iPad (landscape) -->
@@ -77,29 +73,28 @@
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- Favicons
+	<!-- Favicons & web app icons
 	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico?v=2">
+	<link rel="shortcut icon" href="images/favicon.ico">
 	
-	<!-- Standard iPhone --> 
-	<link rel="apple-touch-icon" sizes="57x57" href="touch-icon-iphone-114.png" />
-	<!-- Retina iPhone --> 
-	<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone-114.png" />
-	<!-- Standard iPad --> 
-	<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad-144.png" />
-	<!-- Retina iPad --> 
-	<link rel="apple-touch-icon" sizes="144x144" href="touch-icon-ipad-144.png" />
-
-
-	<!-- iPhone & iPod Touch (Non-Retina) -->
-	<link rel="apple-touch-icon" href="apple-touch-icon-iphone.png">
-	<!-- iPad 2 & iPad mini (Non-Retina) -->
-	<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
-	<!-- iPhone & iPod Touch (Retina) -->
-	<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
-	<!-- iPad & iPad mini (Retina) -->
-	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+	<!-- non-Retina iPhone and iPod Touch (@1× display) --> 
+	<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57-precomposed.png">
+	<!-- iPad mini and the first- and second-generation iPad (@1× display) on iOS 7 or higher -->
+	<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76-precomposed.png">
+	<!-- iPhone 4+ (with @2× display) on iOS 7 or higher -->
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120-precomposed.png">
+	<!-- iPad 3+ (with @2× display) -->
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152-precomposed.png">
+	<!-- Phone 6+ (with @3× display) -->
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180-precomposed.png">
 	
+	<!-- Chrome & Android -->
+	<link rel="icon" sizes="192x192" href="touch-icon-192x192.png">
+	
+	<!-- Fallback -->
+	<link rel="icon" href="apple-touch-icon.png">
+	
+		
 	<!-- Open graph
 	================================================== -->
 	<meta property="og:title" content="Ljudkalendern.se" />
@@ -115,7 +110,6 @@
 	
 	<!-- gFonts -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,700' rel='stylesheet' type='text/css'>
 
 	<!-- Humans.txt
 	================================================== -->
@@ -157,7 +151,7 @@
 						7 => array('2jgb0dt6ix8RRvJWmDRb5Z'),	/* yelle */
 						8 => array('7lzl1Qfv4NqSmypuKmF07l'),	/* röyksopp */
 						9 => array('2pza66DUreALycIoqlieMo'),	/* milky chance */
-						10 => array('5PFlV6ufZ6kR4znYJC1HB2'),	/* casa murilo  */
+						10 => array('34YOUaExxiAdv7ismVvz31'),	/* atmosphere */
 						11 => array('4cntNMQjpROMQmevKb8H9f'),	/* of mice & men */ 
 						12 => array('0U78mbujuFjpprS0G9QcTx'),	/* chromeo */
 						13 => array('1wHOjPgthvvf35Hne9XCbB'),	/* catey shaw */
@@ -209,7 +203,7 @@
 						echo('<div id="'.$i.'" class="four columns album-margin">
 								<div class="feature-image">');
 									//dagens datum och månad ELLER efter årsskiftet
-									if(date('d') >= $i && date('n') >= 11 || date('Y') > 2014 ) {
+									if(date('d') >= $i && date('n') >= 12 || date('Y') > 2013 ) {
 									
 										//get album art url from Spotify
 										$album = "spotify:album:".$d[0]."";
@@ -254,12 +248,10 @@
 
 										if (file_exists($filepath)) {
 											echo('<div class="album-cover-wrap">
-													<a href="spotify://album/'.$d[0].'">
-														<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
+													<a href="spotify://album/'.$d[0].'" onclick="window.open(\'https://open.spotify.com/album/'.$d[0].'\'); return true;">														<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
 														<div class="album-number-active">'.$i.'</div>
 													</a>
 												  </div>');
-											
 /* 											flush(); // show content while loading */
 										}
 										else {
@@ -268,19 +260,18 @@
 										    $img=file_get_contents($spotify_cdn_url);
 										    file_put_contents($destdir.substr($spotify_cdn_url, strrpos($spotify_cdn_url,'/')), $img);
 										    
-											echo('<div class="album-cover">
-													<a href="spotify://album/'.$d[0].'">
+											echo('<div class="album-cover-wrap">
+													<a href="spotify://album/'.$d[0].'" onclick="window.open(\'https://open.spotify.com/album/'.$d[0].'\'); return true;">														<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
 														<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
 														<div class="album-number-active">'.$i.'</div>
 													</a>
 												  </div>');
-												  
 /* 											flush(); // show content while loading */
 										}
 									
 									} 
 									else {
-										echo('<img class="album-shadow" src="images/backgrounds/empty_transp.png" alt="empty_dark.png">
+										echo('<img class="album-shadow" src="images/backgrounds/empty_transp.png" alt="'.$i.'">
 											<div class="album-number">'.$i.'</div>');
 									}
 								echo('</div>
@@ -297,10 +288,12 @@
 		    
 		    	<div class="seven columns space-bottom">
 					<label>Om Ljudkalendern</label>
-					Ljudkalendern delger december månad ett axplock av den utgivna musiken från det gångna året, med förhoppningar om att väcka nyfikenhet inför framtiden — kanske blir det så att du finner en eller flera nya godbitar här i jul!
+					Ljudkalendern delger i december månad varje ett urval av den utgivna musiken från året som gått, med förhoppningar om att väcka nyfikenhet inför framtiden. Lyssna på tidigare årgångar genom att följa Ljudkalendern på Spotify! 
+										
  			    	<a href="spotify://user/ljudkalendern">
 						<div class="spotifybutton"><img src="images/icons/spotify-32-white.png"><span class="buttontext">Follow</span></div>
 					</a>
+
 		    	</div>
 		    
 		    	<div class="five columns">
@@ -309,18 +302,18 @@
 					<form action="//ljudkalendern.us9.list-manage.com/subscribe/post?u=3ec2953a011ec25e52b8bea44&amp;id=03ed4f7fdc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 					    <div id="mc_embed_signup_scroll">
 						
-					<div class="mc-field-group">
-						<label for="mce-EMAIL">Nyhetsbrev</label>
-						De senaste nyheterna om Ljudkalendern, tävlingar och erbjudanden med mera.
-						<input type="email" value="" placeholder="E-postadress" name="EMAIL" class="required email half-bottom half-top" id="mce-EMAIL">
-					</div>
+						<div class="mc-field-group">
+							<label for="mce-EMAIL">Nyhetsbrev</label>
+							Var med och rösta fram 2015 års kalender, få tips om både evenemang och ny musik.
+							<input type="email" value="" placeholder="E-postadress" name="EMAIL" class="required email half-bottom half-top" id="mce-EMAIL">
+						</div>
 						<div id="mce-responses" class="clear">
 							<div class="response" id="mce-error-response" style="display:none"></div>
 							<div class="response" id="mce-success-response" style="display:none"></div>
 						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 					    <div style="position: absolute; left: -5000px;"><input type="text" name="b_3ec2953a011ec25e52b8bea44_03ed4f7fdc" tabindex="-1" value=""></div>
 					    <div class="show"><input type="submit" value="Prenumerera" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-					    </div>
+						</div>
 					</form>
 					</div>
 					<!--End mc_embed_signup-->
@@ -335,7 +328,7 @@
 					<ul class="social-media-icons">
 						<li><a target="_blank" href="http://open.spotify.com/user/ljudkalendern"><img src="images/icons/spotify-32-white.png"></a></li>
 						<li><a target="_blank" href="https://www.facebook.com/Ljudkalendern"><img src="images/icons/facebook-32-white.png"></a></li>
-						<li><a target="_blank" href="https://twitter.com/ljudkalendern"><img src="images/icons/twitter-32-white.png"></a></li>
+						<li><a target="_blank" href="http://twitter.com/home?status=Jag%20lyssnade%20precis%20p%C3%A5%20dagens%20album%20i%20%23ljudkalendern!%20http%3A%2F%2Fljudkalendern.se%2F"><img src="images/icons/twitter-32-white.png"></a></li>
 						<li><a target="_blank" href="http://instagram.com/ljudkalendern"><img src="images/icons/instagram-32-white.png"></a></li>
 					</ul>
 		    	</div>

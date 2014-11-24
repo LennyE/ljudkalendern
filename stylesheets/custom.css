@@ -1,11 +1,12 @@
 body{
 /* 	background:url(../images/backgrounds/tileable_wood_texture.jpg) repeat; */
  	background:url(../images/backgrounds/unsplash-wood-1440.jpg?=new);
-    background-position: top center; 
+/*     background-position: top center;  */
     background-repeat: repeat-y;
     background-size: 100%;
     background-color: #000;
     background-position-y: -84px;
+/*     background-attachment: fixed; */
 }
 
 #top{
@@ -29,54 +30,13 @@ h1,h2,h3,h4,h5,h6{
 	background-color:transparent;
 }
 
-/* !year-menu */
-#mainnav {
-	line-height:40px;
-}
- 
-#mainnav ul li {
-	display: inline;
-	margin: 0 7px 0 7px;
-	margin-bottom: 12px;
-}
-
-#mainnav li a {
-		text-decoration: none!important;
-		transition: background-color 0.5s ease;
-		background-color: transparent;
-		color: #dfdfdf;
-		padding: 2px 6px 3px 6px;
-		border: 1px hidden #fff;
-		margin: 1px;
-		border-radius: 5px!important;
-}
-
-#mainnav li a:hover {
-		text-decoration: underline;
-		border: 1px solid transparent;
-		border-radius: 5px!important;
-		color:#222;
-		background-color: #fff;
-		margin: 0px;
-
-}
-
-#mainnav .link a:active {
-		text-decoration: underline;
-		border: 1px solid transparent;
-		border-radius: 5px!important;
-		color:#fff;
-		background-color: #3a6ba8;
-}
-
-
 /* !date-menu */
 #nav {
 	padding-bottom:-10px!important;
 	margin-bottom:14px;
 	text-align:center;
 	font-style:italic;
-	font-family: 'Source Code Pro', !important;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 	
 #nav ul li {
@@ -85,8 +45,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #kalendern{
-		margin-top: 8px;
-		margin-bottom: 14px;
+	padding-top: 8px; 
+	margin-bottom: 14px;
 }
 
 ul, ol {
@@ -139,6 +99,62 @@ margin-bottom: 0px;
 	-moz-box-shadow: inset 0px 0px 0px 2px #fff;
 	box-shadow: inset 0px 0px 0px 2px #fff;
 }
+
+
+/* responsive adjustments for date menu */
+
+	@media only screen and (max-width: 959px) {
+		/* use regular styles */
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		#nav ul li {
+			width:27px!important;
+		}
+		#nav a:hover {
+			width:27px!important;
+			height:27px!important;
+			line-height:26px;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		#nav ul li {
+			width:31px!important;
+		}
+		#nav a:hover {
+			width:31px!important;
+			height:31px!important;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#nav ul li {
+			width:31px!important;
+
+		}
+		#nav a:hover {
+			width:31px!important;
+			height:31px!important;
+		}
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		#nav ul li {
+			width:34px!important;
+		}
+		#nav a:hover {
+			width:34px!important;
+			height:34px!important;
+		}
+	}
+
+
+
 
 .feature-image {
 	position: relative;	
@@ -235,10 +251,10 @@ margin-bottom: 0px;
 	/* since backgound-color:transparent; caused opacity flickering,
 	   an aimation delay is used to eliminate the problem while still
 	   avoiding problems in Safari by using opacity instead of brightness. */
-	-webkit-animation: bgdelay 2s forwards; /* Safari 4+ */
-	-moz-animation:    bgdelay 2s forwards; /* Fx 5+ */
-	-o-animation:      bgdelay 2s forwards; /* Opera 12+ */
-	animation:         bgdelay 2s forwards; /* IE 10+, Fx 29+ */
+	-webkit-animation: bgdelay 1s forwards; /* Safari 4+ */
+	-moz-animation:    bgdelay 1s forwards; /* Fx 5+ */
+	-o-animation:      bgdelay 1s forwards; /* Opera 12+ */
+	animation:         bgdelay 1s forwards; /* IE 10+, Fx 29+ */
 	
 	-webkit-animation-iteration-count: 1;
 	-moz-animation-iteration-count: 1;
@@ -300,6 +316,13 @@ margin-bottom: 0px;
 	-webkit-user-select: none;
 }
 
+.tinytext{
+	margin-top: 8px;
+	font-size: 12px;
+	font-family: arial;
+/* 	text-transform: uppercase; */
+}
+
 
 
 
@@ -308,15 +331,11 @@ margin-bottom: 0px;
 
 #logo {
 	margin-top: 20px!important;
-/* 	visibility: visible; */
 	-webkit-user-select: none;
-	display: none;
-
 }
 
 #ios-header{
 	display: none;
-/* 	visibility: collapse; */
 	color: #fff;
 	padding-top: 28px;
 	padding-bottom: 4px;
@@ -332,7 +351,6 @@ margin-bottom: 0px;
 }
 
 #ios-header-padding{
-/* 	visibility: collapse; */
 	display: none;
 }
 /* !show iOS style menubar on apples mobile devices */
@@ -350,15 +368,16 @@ margin-bottom: 0px;
 			/* visibility: collapse; don't use, hides in-browser on iOS */ 
 			display: none;
 		}
-
+		
 		#ios-header{
 		
 			background-color: rgba(28,28,28,1.0)!important;
 			visibility: visible;
-			-webkit-animation: slide-in-top 2s forwards; /* Safari 4+ */
-			-moz-animation:    slide-in-top 2s forwards; /* Fx 5+ */
-			-o-animation:      slide-in-top 2s forwards; /* Opera 12+ */
-			animation:         slide-in-top 2s forwards; /* IE 10+, Fx 29+ */
+			
+			-webkit-animation: slide-in-top 2s forwards;
+			-moz-animation:    slide-in-top 2s forwards;
+			-o-animation:      slide-in-top 2s forwards;
+			animation:         slide-in-top 2s forwards;
 			
 			-webkit-animation-iteration-count: 1;
 			-moz-animation-iteration-count: 1;
@@ -369,6 +388,7 @@ margin-bottom: 0px;
 		    -moz-animation-delay: 0.5s;
 		    -o-animation-delay: 0.5s;
 		    animation-delay: 0.5s;
+
 		}
 		
 		    @-webkit-keyframes slide-in-top {
@@ -398,11 +418,6 @@ margin-bottom: 0px;
 .header a{
 	text-align:center;
 	text-decoration:none;
-}
-
-
-.header .container .bgc{
-/* 	background-color: aqua; */
 }
 
 /*** end !header ***/
@@ -501,6 +516,13 @@ label{
 
 .social-media-icons li img:hover{
 	transform: scale(1.1);
+}
+
+.reload-icon{
+	position:absolute;
+	right:12px;
+	margin-top:4px;
+	z-index: 9900;
 }
 
 
