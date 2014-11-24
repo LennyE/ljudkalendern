@@ -5,8 +5,6 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-<!-- 	<script src="http://www.livejs.com/live.js"></script> -->
-
 	<!-- Standalone (iOS full screen web app)
 	================================================== -->
 	<script type="text/javascript" src="javascripts/swapheader.js" async></script>
@@ -27,7 +25,7 @@
 	================================================== -->
 	<meta charset="utf-8">
 	<title>Ljudkalendern 2014</title>
-	<meta name="description" content="Ljudkalendern &mdash; En kalender fylld med h&auml;rlig musik fr&aring;n &aring;ret som g&aring;tt!">
+	<meta name="description" content="Ljudkalendern fylls varje år i december månad med ett urval av den utgivna musiken från året som gått.">
 
 	<!-- CSS
 	================================================== -->
@@ -38,7 +36,6 @@
 
 	<!-- jQuery
 	================================================== -->
-	<!--<script src="javascripts/jquery-1.10.2.min.js"></script>-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 	<!-- Smoothscroll (auto-scroll to number)
@@ -99,10 +96,11 @@
 	================================================== -->
 	<meta property="og:title" content="Ljudkalendern.se" />
 	<meta property="og:type" content="website" />
-	<meta property="og:description" content="En adventskalender fylld med musik!" />      
+	<meta property="og:description" content="Ljudkalendern fylls varje år i december månad med ett urval av den utgivna musiken från året som gått" />      
 	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image1.jpg" />
 	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image2.jpg" />
 	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image3.jpg" />
+	<meta property="og:image" content="http://ljudkalendern.se/images/share/fb_share_image4.jpg" />
 	<meta property="og:url" content="http://ljudkalendern.se" />
 		
 	<!-- Insights -->
@@ -118,7 +116,6 @@
 </head>
 <body>
 
-<div class="bg"></div> <!-- bg class used by Parallax scroll -->
 <span id="top">&nbsp;</span><!-- scroll to top, inactive -->
 
 	<!-- Primary Page Layout
@@ -127,7 +124,6 @@
 	<?php include('header.php'); ?>
 	
 	<div class="container">
-
 
 					<!-- menu -->
 					<div id="nav" class="sixteen columns nav-fade">
@@ -168,42 +164,13 @@
 						24 => array('0rk5czGKHLHVD0UYSz2cNB'),	/* seinabo sey */
 					);
 
-
-					/*
-						1 => array('3YHf7ooFmrTOsp4jPM3aFj'),
-						2 => array('39q3ilAGf1QcBwIzKkAhO6'),
-						3 => array('6HN0urVcVzm44FDDz1ZssA'),
-						4 => array('3WequSBxJjxLL24Nvf3u0i'),
-						5 => array('2DeOjL5WprdaQb4vTWCWrE'),
-						6 => array('1xRzeGYhvel6QKEuRPLFXh'),
-						7 => array('6eTkAY5V7N2xPAovJWRFSr'),
-						8 => array('5lyGNHr9RNfyckKzNN1dq2'),
-						9 => array('30p1meHBKVwMY9lsOabmwd'),
-						10 => array('37xl28qGX45H01dsex3nUx'),
-						11 => array('1mGPHj7IomG8gBUW3wRi8G'),
-						12 => array('6FDDd5kzWGXVm1qbKRGqEg'),
-						13 => array('4IpHjxzT5iQXP0SNWQFCsK'),
-						14 => array('6HTFCEmpEwbkJMzX3IB7xG'),
-						15 => array('5WNh9jz9m5PEfH5lKlaipA'),
-						16 => array('7HxQpGRaQXPudaP1t8E6n9'),
-						17 => array('0t0QkoTnDz5uj5I92C7wwE'),
-						18 => array('7DJgfpwm8MT0Kd3yqjb6eg'),
-						19 => array('7DQ9r7wFUUtpJcQrKiiS02'),
-						20 => array('4WnkQO4xD9ljQooB3VIxCV'),
-						21 => array('67y5PUQ8B4qX7BpWu55uF6'),
-						22 => array('1L19oPU0umN0bd2N1QQXJw'),
-						23 => array('3PYpxrfvtSy2OmgiDbrjGM'),
-						24 => array('2Qi2SySN2ePZwMLDSv9Krn'),
-					*/
-					
-					
 					date_default_timezone_set('Europe/Stockholm');
 					
 					foreach($data as $i => $d) {
 						echo('<div id="'.$i.'" class="four columns album-margin">
 								<div class="feature-image">');
-									//dagens datum och månad ELLER efter årsskiftet
-									if(date('d') >= $i && date('n') >= 12 || date('Y') > 2013 ) {
+									//date and month OR past new year
+									if(date('d') >= $i && date('n') >= 12 || date('Y') > 2014 ) {
 									
 										//get album art url from Spotify
 										$album = "spotify:album:".$d[0]."";
@@ -221,10 +188,10 @@
 										$json  = json_decode($json);
 										$cover = $json->thumbnail_url;
 										
-										//artistens eller gruppens namn (minus allt efter tankestrecket som av någon anledning är namnet på albumets sista spår)
+										//name of group or artist (remove all after dash, which for some reason is the last track of the album)
 										$artist = strtok($json->title, '-');
 
-										//byt ut "cover" i länken mot "640" vilket genererar en högre upplösning av själva bilden (60, 85, 120, 300, eller 640)
+										//swap the word "cover" in the link to 640 in order to generate a specific resolution (60, 85, 120, 300, eller 640)
 										$largecover = str_replace("cover","640","$cover");
 									
 										
@@ -233,7 +200,6 @@
 									/////////////////////////
 										
 										// cdn link output from Spotify curl request
- 										//$spotify_cdn_url = "https://d3rt1990lpmkn.cloudfront.net/640/032141dbc0c946bfc0347fc42cfed43c27df5300"; */
 										$spotify_cdn_url = $largecover;
 										
 										// server cache folder
@@ -247,11 +213,14 @@
 
 
 										if (file_exists($filepath)) {
+
 											echo('<div class="album-cover-wrap">
-													<a href="spotify://album/'.$d[0].'" onclick="window.open(\'https://open.spotify.com/album/'.$d[0].'\'); return true;">														<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
+													<a href="spotify://album/'.$d[0].'" onclick="window.open(\'https://open.spotify.com/album/'.$d[0].'\'); return true;">
+														<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
 														<div class="album-number-active">'.$i.'</div>
 													</a>
 												  </div>');
+
 /* 											flush(); // show content while loading */
 										}
 										else {
@@ -261,7 +230,7 @@
 										    file_put_contents($destdir.substr($spotify_cdn_url, strrpos($spotify_cdn_url,'/')), $img);
 										    
 											echo('<div class="album-cover-wrap">
-													<a href="spotify://album/'.$d[0].'" onclick="window.open(\'https://open.spotify.com/album/'.$d[0].'\'); return true;">														<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
+													<a href="spotify://album/'.$d[0].'" onclick="window.open(\'https://open.spotify.com/album/'.$d[0].'\'); return true;">														
 														<img class="album-cover" src="'.$filepath.'" alt="'.$artist.'">
 														<div class="album-number-active">'.$i.'</div>
 													</a>
@@ -288,9 +257,9 @@
 		    
 		    	<div class="seven columns space-bottom">
 					<label>Om Ljudkalendern</label>
-					Ljudkalendern delger i december månad varje ett urval av den utgivna musiken från året som gått, med förhoppningar om att väcka nyfikenhet inför framtiden. Lyssna på tidigare årgångar genom att följa Ljudkalendern på Spotify! 
+					Ljudkalendern fylls varje &aring;r i december m&aring;nad med ett urval av den utgivna musiken fr&aring;n &aring;ret som g&aring;tt, med f&ouml;rhoppningar om att v&auml;cka nyfikenhet inf&ouml;r framtiden. Lyssna &auml;ven p&aring; tidigare &aring;rg&aring;ngar genom att f&ouml;lja Ljudkalendern p&aring; Spotify! 
 										
- 			    	<a href="spotify://user/ljudkalendern">
+ 			    	<a href="spotify://user/ljudkalendern" onclick="window.open('https://open.spotify.com/user/ljudkalendern'); return true;">
 						<div class="spotifybutton"><img src="images/icons/spotify-32-white.png"><span class="buttontext">Follow</span></div>
 					</a>
 
@@ -304,7 +273,7 @@
 						
 						<div class="mc-field-group">
 							<label for="mce-EMAIL">Nyhetsbrev</label>
-							Var med och rösta fram 2015 års kalender, få tips om både evenemang och ny musik.
+							Var med och r&ouml;sta fram 2015 &aring;rs kalender, f&aring; nyheter och tips p&aring; sp&auml;nnande musik.
 							<input type="email" value="" placeholder="E-postadress" name="EMAIL" class="required email half-bottom half-top" id="mce-EMAIL">
 						</div>
 						<div id="mce-responses" class="clear">

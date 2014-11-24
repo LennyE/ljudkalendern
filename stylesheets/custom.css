@@ -1,12 +1,9 @@
 body{
-/* 	background:url(../images/backgrounds/tileable_wood_texture.jpg) repeat; */
  	background:url(../images/backgrounds/unsplash-wood-1440.jpg?=new);
-/*     background-position: top center;  */
     background-repeat: repeat-y;
     background-size: 100%;
     background-color: #000;
     background-position-y: -84px;
-/*     background-attachment: fixed; */
 }
 
 #top{
@@ -20,6 +17,7 @@ h1,h2,h3,h4,h5,h6{
 .footer a:visited{
 	color:#fff;
 }
+
 .footer a:hover{
 	color:#eee;
 	border-bottom: 1px dotted #cfcfcf;
@@ -50,7 +48,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 ul, ol {
-margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 #nav ul li {
@@ -61,7 +59,6 @@ margin-bottom: 0px;
 	vertical-align:top!important;
 	margin: 0px 0px -8px 0px!important;
 	line-height:45px;
-
 }
 
 #nav a {
@@ -316,14 +313,6 @@ margin-bottom: 0px;
 	-webkit-user-select: none;
 }
 
-.tinytext{
-	margin-top: 8px;
-	font-size: 12px;
-	font-family: arial;
-/* 	text-transform: uppercase; */
-}
-
-
 
 
 /*** !header with different top-layouts depending on device ***/
@@ -353,6 +342,7 @@ margin-bottom: 0px;
 #ios-header-padding{
 	display: none;
 }
+
 /* !show iOS style menubar on apples mobile devices */
 @media only screen and
 	/* !iPads (portrait and landscape) */
