@@ -257,7 +257,7 @@
 		    
 		    	<div class="seven columns space-bottom">
 					<label>Om Ljudkalendern</label>
-					Ljudkalendern fylls varje &aring;r i december m&aring;nad med ett urval av den utgivna musiken fr&aring;n &aring;ret som g&aring;tt, med f&ouml;rhoppningar om att v&auml;cka nyfikenhet inf&ouml;r framtiden. Lyssna &auml;ven p&aring; tidigare &aring;rg&aring;ngar genom att f&ouml;lja Ljudkalendern p&aring; Spotify! 
+					Ljudkalendern fylls varje &aring;r i december m&aring;nad med ett urval av utgiven musik fr&aring;n &aring;ret som g&aring;tt, med f&ouml;rhoppningar om att v&auml;cka nyfikenhet inf&ouml;r framtiden. Lyssna &auml;ven p&aring; tidigare &aring;rg&aring;ngar genom att f&ouml;lja Ljudkalendern p&aring; Spotify! 
 										
  			    	<a href="spotify://user/ljudkalendern" onclick="window.open('https://open.spotify.com/user/ljudkalendern'); return true;">
 						<div class="spotifybutton"><img src="images/icons/spotify-32-white.png"><span class="buttontext">Follow</span></div>
