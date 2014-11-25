@@ -138,30 +138,30 @@
 	<?php
 
 	$data = array(
-		 1 => array('4KyGV3oBIMDeP2C5OmhYsd', 'svenska björnstammen'),
-		 2 => array('1dKh4z5Aayt8FFDWjO5FDh', 'future islands'),
-		 3 => array('7aC8ce2LQ6IZRROYJw63oS', 'faråker'),
-		 4 => array('22cFcAQkydpTzeSKQZEKv0', 'foster the people'),
-		 5 => array('5sCsfubNchaI9RCpP7K7aB', 'jenny lewis'),
-		 6 => array('6a8GZWPmLWWTUDsQ61yAro', 'timbuktu'),
-		 7 => array('2jgb0dt6ix8RRvJWmDRb5Z', 'yelle'),
-		 8 => array('7lzl1Qfv4NqSmypuKmF07l', 'röyksopp'),
-		 9 => array('2pza66DUreALycIoqlieMo', 'milky chance'),
-		10 => array('34YOUaExxiAdv7ismVvz31', 'atmosphere'),
-		11 => array('4cntNMQjpROMQmevKb8H9f', 'of mice & men'),
-		12 => array('0U78mbujuFjpprS0G9QcTx', 'chromeo'),
-		13 => array('1wHOjPgthvvf35Hne9XCbB', 'catey shaw'),
-		14 => array('3GsZ6BxwhIVtOUrOZg8Jm7', 'cazzette'),
-		15 => array('59cst3IGDjIGjXYX0WGONI', 'maybeshewill'),
-		16 => array('0AzzkKWd53eUoJOl4gl7Ns', 'haerts'),
-		17 => array('6VJyshPiSoQP4kreHOl3Ul', 'we are twin'),
-		18 => array('4Z1kH6bfeeMYtCuhnR4vEr', 'the fray'),
-		19 => array('5IRRC3nCfo3LygsxQ6AWKB', 'biffy clyro'),
-		20 => array('26OaztCSd0sLflvdtQRmWa', 'blackbird blackbird'),
-		21 => array('2CslpGBJenq4K5NtuMXMgM', 'architecture in helsinki'),
-		22 => array('1DXIAzh9HNmv1q06kcMIXB', 'wolf gang'),
-		23 => array('0fBbwN05YlFoCbpmhxte2G', 'fanfarlo'),
-		24 => array('0rk5czGKHLHVD0UYSz2cNB', 'seinabo sey'),
+		 1 => array('4KyGV3oBIMDeP2C5OmhYsd', 'Svenska Björnstammen'),
+		 2 => array('1dKh4z5Aayt8FFDWjO5FDh', 'Future Islands'),
+		 3 => array('7aC8ce2LQ6IZRROYJw63oS', 'Faråker'),
+		 4 => array('22cFcAQkydpTzeSKQZEKv0', 'Foster the People'),
+		 5 => array('5sCsfubNchaI9RCpP7K7aB', 'Jenny Lewis'),
+		 6 => array('6a8GZWPmLWWTUDsQ61yAro', 'Timbuktu'),
+		 7 => array('2jgb0dt6ix8RRvJWmDRb5Z', 'Yelle'),
+		 8 => array('7lzl1Qfv4NqSmypuKmF07l', 'Röyksopp'),
+		 9 => array('2pza66DUreALycIoqlieMo', 'Milky Chance'),
+		10 => array('34YOUaExxiAdv7ismVvz31', 'Atmosphere'),
+		11 => array('4cntNMQjpROMQmevKb8H9f', 'Of Mice & Men'),
+		12 => array('0U78mbujuFjpprS0G9QcTx', 'Chromeo'),
+		13 => array('1wHOjPgthvvf35Hne9XCbB', 'Catey Shaw'),
+		14 => array('3GsZ6BxwhIVtOUrOZg8Jm7', 'Cazzette'),
+		15 => array('59cst3IGDjIGjXYX0WGONI', 'Maybeshewill'),
+		16 => array('0AzzkKWd53eUoJOl4gl7Ns', 'Haerts'),
+		17 => array('6VJyshPiSoQP4kreHOl3Ul', 'We are Twin'),
+		18 => array('4Z1kH6bfeeMYtCuhnR4vEr', 'The Fray'),
+		19 => array('5IRRC3nCfo3LygsxQ6AWKB', 'Biffy Clyro'),
+		20 => array('26OaztCSd0sLflvdtQRmWa', 'Blackbird blackbird'),
+		21 => array('2CslpGBJenq4K5NtuMXMgM', 'Architecture in Helsinki'),
+		22 => array('1DXIAzh9HNmv1q06kcMIXB', 'Wolf Gang'),
+		23 => array('0fBbwN05YlFoCbpmhxte2G', 'Fanfarlo'),
+		24 => array('0rk5czGKHLHVD0UYSz2cNB', 'Seinabo Sey'),
 	);
 
 	date_default_timezone_set('Europe/Stockholm');
@@ -216,7 +216,7 @@
 
 	</div><!--end container-->
 				
-		<!-- footer --->
+		<!-- footer -->
 		<div class="footer">
 		
 		    <div class="container">
