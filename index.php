@@ -177,7 +177,7 @@
 		echo('<div id="'.$i.'" class="four columns album-margin"><div class="feature-image">');
 
 		// date and month OR past new year
-		if(date('d') >= $i && date('n') >= 12 || date('Y') > 2013) {
+		if(date('d') >= $i && date('n') >= 12 || date('Y') > 2014) {
 
 			$path = 'images/cache/2014/'.$d.'.jpg';
 
