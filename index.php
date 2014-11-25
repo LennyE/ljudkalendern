@@ -120,10 +120,6 @@
 
 	<!-- Primary Page Layout
 	================================================== -->
-	
-	<?php include('header.php'); ?>
-	
-	<div class="container">
 
 <?php include('header.php'); ?>
 
